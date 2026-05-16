@@ -4,6 +4,20 @@ Voice-agent experiments for automating prior authorization status-check calls.
 
 The current implementation is a LiveKit Agents worker plus an adversarial mock IVR harness. It is designed for fast prompt-engineering and model evaluation before piloting against real payer phone trees.
 
+## Screenshots
+
+### Leaderboard
+
+![Dashboard leaderboard](leaderboard.png)
+
+### Benchmark Steps
+
+![Benchmark steps](bench-steps.png)
+
+### Episode Traces
+
+![Episode traces](traces.png)
+
 ## What This Does
 
 - Runs a LiveKit voice agent that can join mock or SIP-backed calls.
@@ -20,6 +34,10 @@ The current implementation is a LiveKit Agents worker plus an adversarial mock I
 .
 ├── README.md
 ├── .env.example
+├── leaderboard.png
+├── bench-steps.png
+├── traces.png
+├── private/                  # local-only internal material, gitignored
 ├── voice-agent/
 │   ├── agent.py              # LiveKit worker and mission agent
 │   ├── mock_ivr.py           # adversarial mock IVR participant
@@ -32,16 +50,39 @@ The current implementation is a LiveKit Agents worker plus an adversarial mock I
 │   ├── .env.example
 │   └── test-fixtures/
 │       └── mock_ivr_menu.md
-└── scripts/
+
 ```
 
-Generated artifacts are intentionally ignored:
+There is intentionally no `scripts/` directory in the public repo. Earlier internal extraction/transcription scripts and source materials were moved out of the public surface.
 
-- `voice-agent/episodes/`
-- `voice-agent/recordings/`
-- `voice-agent/dashboard.html`
-- `voice-agent/logs/`
-- `.env.local`
+## Stack
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| Realtime media | LiveKit Cloud + LiveKit Agents | WebRTC rooms, agent workers, dispatch, SIP gateway |
+| Primary voice model | OpenAI GPT-Realtime-2 | Native speech-to-speech agent path |
+| Comparison voice model | xAI Grok Voice Think Fast | Optional S2S benchmark path |
+| Fallback stack | Deepgram STT + Groq Llama + Deepgram TTS | Cascaded fallback path |
+| Mock IVR speech | Deepgram Aura TTS + Deepgram streaming STT | Synthetic payer prompts and agent speech capture |
+| Telephony carrier | Twilio Elastic SIP Trunk | PSTN/SIP for real outbound calls through LiveKit |
+| Judge | Anthropic Claude or other configured provider | Optional LLM-judged soft checks |
+| Dashboard | Static local HTML | Leaderboard, check matrix, trace replay, audio player |
+
+## Accounts And API Keys
+
+Create `../.env.local` from `voice-agent/.env.example` or root `.env.example`. Required for the full harness:
+
+| Account | Env vars | Needed for |
+|---|---|---|
+| LiveKit Cloud | `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, `SIP_OUTBOUND_TRUNK_ID` | Agent worker, rooms, dispatches, SIP calls |
+| OpenAI | `OPENAI_API_KEY` | Default `gpt-rt2` speech-to-speech agent |
+| Deepgram | `DEEPGRAM_API_KEY` | Mock IVR TTS/STT and cascaded fallback |
+| Twilio | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_PHONE_NUMBER` | SIP carrier and outbound caller ID |
+| Groq | `GROQ_API_KEY` | Optional cascaded LLM fallback |
+| xAI | `XAI_API_KEY` | Optional `grok-voice` comparison path |
+| Anthropic | `ANTHROPIC_API_KEY`, `JUDGE_MODEL` | Optional Claude judge for soft checks |
+
+Mock-only local benchmarking still needs LiveKit, OpenAI, and Deepgram. Real PSTN calls also need Twilio SIP configured and connected to LiveKit.
 
 ## Quick Start
 
@@ -92,6 +133,22 @@ The mission metadata controls the backend:
 - `cascaded`: Deepgram STT, Groq Llama, and Deepgram TTS fallback.
 
 `MissionBrief.model` defaults to `gpt-rt2`.
+
+## Mock IVR Personas
+
+The mock IVR rotates representative behavior to avoid overfitting to one easy script:
+
+| Persona | CLI value | What it tests |
+|---|---|---|
+| Polite Sarah | `polite_sarah` | Baseline: clear, normal pace, asks DOB then reference number |
+| Rushed John | `rushed_john` | Turn-taking stress: fast, terse, asks for the reference first |
+| Confused Maria | `confused_maria` | Recovery stress: asks for repeats and can appear to mix up patient context |
+
+Run all personas with:
+
+```bash
+python bench.py --models gpt-rt2 --personas all --runs 1 --record-audio
+```
 
 ## Scoring
 

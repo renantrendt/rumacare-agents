@@ -6,6 +6,22 @@ The current default model path is GPT-Realtime-2. Grok Voice and a cascaded Deep
 
 ---
 
+## Stack And Accounts
+
+| Layer | Provider/tool | Env vars |
+|---|---|---|
+| Realtime rooms, dispatch, SIP | LiveKit Cloud | `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, `SIP_OUTBOUND_TRUNK_ID` |
+| Primary S2S model | OpenAI GPT-Realtime-2 | `OPENAI_API_KEY` |
+| Optional S2S comparison | xAI Grok Voice | `XAI_API_KEY` |
+| Cascaded fallback LLM | Groq | `GROQ_API_KEY` |
+| Mock IVR TTS/STT | Deepgram | `DEEPGRAM_API_KEY` |
+| PSTN/SIP carrier | Twilio Elastic SIP Trunk | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_PHONE_NUMBER` |
+| Optional scorer judge | Anthropic Claude | `ANTHROPIC_API_KEY`, `JUDGE_MODEL` |
+
+For mock-IVR benchmarking, you need LiveKit, OpenAI, and Deepgram. Add Twilio when testing real outbound SIP/PSTN calls. Add xAI/Groq/Anthropic only if you run those optional paths.
+
+---
+
 ## Why LiveKit
 
 The previous bespoke stack worked, but every precision improvement required more hand-rolled telephony and media infrastructure. LiveKit gives us a cleaner worker model, dispatching, WebRTC audio, SIP integration, and native speech-to-speech model support.
@@ -58,6 +74,24 @@ See `.env.example` for the full list with comments. All secrets live in `../.env
 
 ---
 
+## Mock IVR Personas
+
+The harness intentionally varies the representative after the IVR so prompt changes do not overfit to a single cooperative rep.
+
+| Persona | CLI value | Behavior |
+|---|---|---|
+| Polite Sarah | `polite_sarah` | Clear baseline. Asks for DOB, then authorization reference, then reads status. |
+| Rushed John | `rushed_john` | Fast and terse. Often asks for the reference first and uses shorter confirmations. |
+| Confused Maria | `confused_maria` | Recovery test. Asks for repeats and may appear to mix up the patient before finding the authorization. |
+
+Use `--personas all` to rotate all three:
+
+```bash
+python bench.py --models gpt-rt2 --personas all --runs 1 --record-audio
+```
+
+---
+
 ## File Map
 
 | File | Role |
@@ -79,6 +113,8 @@ Generated artifacts are ignored by git:
 - `recordings/`
 - `dashboard.html`
 - `logs/`
+
+Screenshots used by the root README live at the repo root and are intentionally trackable.
 
 ---
 
@@ -116,6 +152,13 @@ Render the dashboard:
 ```bash
 python dashboard.py --out dashboard.html --open
 ```
+
+The dashboard includes:
+
+- Leaderboard by model.
+- Per-check pass-rate matrix.
+- Per-episode trace replay.
+- Audio player for episodes recorded with `--record-audio`.
 
 ## Public Data Policy
 
