@@ -1,0 +1,115 @@
+{
+  "episode_id": "ep_1778900516_573fd1d0",
+  "room": "bench-grok-voice-confused_maria-r0-1778900510",
+  "started_at": 1778900516.660245,
+  "ended_at": 1778900597.059093,
+  "params": {
+    "language_attempt": "english",
+    "invalid_npi_count": 0,
+    "hold_seconds": 3,
+    "rep_persona": "confused_maria",
+    "inject_url_deflection": true,
+    "human_path": "press_9",
+    "auth_status": "approved",
+    "rep_voice_gender": "female",
+    "expected_npi": "1234567890",
+    "expected_dob_spoken": "March fourteenth nineteen eighty five",
+    "expected_dob_digits": "03141985",
+    "expected_auth_ref": "AUTH-2026-0042",
+    "expected_cpt": "99213"
+  },
+  "rep_persona": "Maria",
+  "events": [
+    {
+      "ts": 0.8934440612792969,
+      "type": "existing_participant",
+      "payload": {
+        "identity": "agent-AJ_nyKofqb8qU3s",
+        "kind": "4"
+      }
+    },
+    {
+      "ts": 0.8957910537719727,
+      "type": "agent_audio_subscribed",
+      "payload": {
+        "participant": "agent-AJ_nyKofqb8qU3s"
+      }
+    },
+    {
+      "ts": 2.6460120677948,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Thank you for calling MockHealth provider services. Most prior authorization questions can be answered at our provider portal at MockHealth dot com slash providers. To continue with this call: for English, press 1, para Espa\u00f1ol, oprima 2."
+      }
+    },
+    {
+      "ts": 23.206212043762207,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "1",
+        "code": 1
+      }
+    },
+    {
+      "ts": 23.206254243850708,
+      "type": "level_1_chose",
+      "payload": {
+        "digit": "1",
+        "expected": "1"
+      }
+    },
+    {
+      "ts": 23.206526041030884,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Please listen to the following menu options carefully, as they have recently changed. For claims status, press 1. For prior authorization, press 2. For credentialing, press 3. For all other inquiries, press 0. To repeat this menu, press star."
+      }
+    },
+    {
+      "ts": 43.111531019210815,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "2",
+        "code": 2
+      }
+    },
+    {
+      "ts": 43.11158299446106,
+      "type": "level_2_chose",
+      "payload": {
+        "digit": "2",
+        "expected": "2"
+      }
+    },
+    {
+      "ts": 43.111644983291626,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "You've reached prior authorization services. To check the status of an existing authorization, you may visit our provider portal at MockHealth dot com, or use our automated status system by entering your reference number now. To speak with a representative about prior authorization, press 9."
+      }
+    },
+    {
+      "ts": 80.39851713180542,
+      "type": "dtmf_timeout",
+      "payload": {
+        "waited_s": 20.0
+      }
+    },
+    {
+      "ts": 80.39852285385132,
+      "type": "level_3_chose",
+      "payload": {
+        "digit": null,
+        "expected": "9"
+      }
+    },
+    {
+      "ts": 80.39853692054749,
+      "type": "episode_aborted",
+      "payload": {
+        "reason": "timeout",
+        "detail": "Agent fell for self-service trap at L3 (pressed None, expected 9)"
+      }
+    }
+  ]
+}

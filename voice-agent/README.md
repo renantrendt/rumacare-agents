@@ -2,7 +2,7 @@
 
 Outbound voice agent and mock IVR evaluation harness for prior authorization status checks.
 
-The current default model path is GPT-Realtime-2. Grok Voice and a cascaded Deepgram/Groq/Deepgram path remain available for explicit comparison runs.
+The public harness is GPT-first: the default model path is GPT-Realtime-2.
 
 ---
 
@@ -12,13 +12,11 @@ The current default model path is GPT-Realtime-2. Grok Voice and a cascaded Deep
 |---|---|---|
 | Realtime rooms, dispatch, SIP | LiveKit Cloud | `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, `SIP_OUTBOUND_TRUNK_ID` |
 | Primary S2S model | OpenAI GPT-Realtime-2 | `OPENAI_API_KEY` |
-| Optional S2S comparison | xAI Grok Voice | `XAI_API_KEY` |
-| Cascaded fallback LLM | Groq | `GROQ_API_KEY` |
 | Mock IVR TTS/STT | Deepgram | `DEEPGRAM_API_KEY` |
 | PSTN/SIP carrier | Twilio Elastic SIP Trunk | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_PHONE_NUMBER` |
 | Optional scorer judge | Anthropic Claude | `ANTHROPIC_API_KEY`, `JUDGE_MODEL` |
 
-For mock-IVR benchmarking, you need LiveKit, OpenAI, and Deepgram. Add Twilio when testing real outbound SIP/PSTN calls. Add xAI/Groq/Anthropic only if you run those optional paths.
+For mock-IVR benchmarking, you need LiveKit, OpenAI, and Deepgram. Add Twilio when testing real outbound SIP/PSTN calls. Add Anthropic only if you run LLM-judged soft checks.
 
 ---
 
@@ -31,7 +29,7 @@ The previous bespoke stack worked, but every precision improvement required more
 | IVR testing | Manual call attempts | Python mock IVR participant |
 | DTMF for IVR | Twilio TwiML updates | LiveKit room DTMF tool |
 | Turn-taking + barge-in | Manual VAD wiring | `livekit.plugins.turn_detector` |
-| Switching cascaded/native S2S | Major rewrite | Swap session model construction |
+| Native S2S model path | Major rewrite | GPT-Realtime-2 session construction |
 | Concurrent calls | 1 per process (FastAPI bound) | N per worker, dispatched on demand |
 | Observability | Local logs only | traces, scoring, dashboard, LiveKit logs |
 
@@ -107,7 +105,7 @@ python bench.py --models gpt-rt2 --personas all --runs 1 --record-audio
 | `requirements.txt` | Pinned Python dependencies |
 | `.env.example` | Template for `../.env.local` |
 
-Generated artifacts are ignored by git:
+The public repo includes one synthetic demo run so people can inspect the output without running the harness first:
 
 - `episodes/`
 - `recordings/`
@@ -139,12 +137,6 @@ Run one model:
 
 ```bash
 python bench.py --models gpt-rt2 --personas all --runs 1 --record-audio
-```
-
-Run an opt-in comparison:
-
-```bash
-python bench.py --models gpt-rt2,grok-voice --personas all --runs 1
 ```
 
 Render the dashboard:

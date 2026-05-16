@@ -1,0 +1,811 @@
+{
+  "job_id": "AJ_iLzVM3bX5AeA",
+  "room": "bench-gpt-rt2-rushed_john-r0-1778900745",
+  "agent_name": "rumacare",
+  "model": "gpt-rt2",
+  "started_at": 1778900747.941696,
+  "ended_at": 1778900873.381595,
+  "events": [
+    {
+      "ts": 0.008,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "AgentHandoff"
+      }
+    },
+    {
+      "ts": 0.027,
+      "type": "agent_state",
+      "payload": {
+        "old": "initializing",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 6.393,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 9.293,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 9.304,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 9.619,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling MOC Health Provider Services.",
+        "language": null
+      }
+    },
+    {
+      "ts": 9.619,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling MOC Health Provider Services."
+        ],
+        "text_content": "Thank you for calling MOC Health Provider Services.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 21.328,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 21.348,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 21.933,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "thinking"
+      }
+    },
+    {
+      "ts": 22.133,
+      "type": "dtmf_sent",
+      "payload": {
+        "digits": "1",
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "ts": 22.134,
+      "type": "tools_executed",
+      "payload": {
+        "calls": [
+          {
+            "name": "send_dtmf",
+            "call_id": "call_BKMvW4zb8rOhMLDS",
+            "arguments": "{\"digits\":\"1\"}",
+            "output": "Sent DTMF: 1",
+            "is_error": false
+          }
+        ]
+      }
+    },
+    {
+      "ts": 22.79,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 22.792,
+      "type": "agent_state",
+      "payload": {
+        "old": "thinking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 22.886,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Most prior authorization questions can be answered at our provider portal at mockhealth.com/providers. To continue with this call, for English, press 1, para espanol oprima 2.",
+        "language": null
+      }
+    },
+    {
+      "ts": 22.886,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Most prior authorization questions can be answered at our provider portal at mockhealth.com/providers. To continue with this call, for English, press 1, para espanol oprima 2."
+        ],
+        "text_content": "Most prior authorization questions can be answered at our provider portal at mockhealth.com/providers. To continue with this call, for English, press 1, para espanol oprima 2.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 33.297,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 33.298,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 33.781,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Please listen to the following menu options carefully as they have recently changed. For claim status, press 1. For prior authorization, press 2. For credentialing, press 3.",
+        "language": null
+      }
+    },
+    {
+      "ts": 33.781,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Please listen to the following menu options carefully as they have recently changed. For claim status, press 1. For prior authorization, press 2. For credentialing, press 3."
+        ],
+        "text_content": "Please listen to the following menu options carefully as they have recently changed. For claim status, press 1. For prior authorization, press 2. For credentialing, press 3.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 38.891,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 38.897,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 39.235,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "For all other inquiries, press zero. To repeat this menu, press star.",
+        "language": null
+      }
+    },
+    {
+      "ts": 39.235,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "For all other inquiries, press zero. To repeat this menu, press star."
+        ],
+        "text_content": "For all other inquiries, press zero. To repeat this menu, press star.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 39.704,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "thinking"
+      }
+    },
+    {
+      "ts": 39.903,
+      "type": "dtmf_sent",
+      "payload": {
+        "digits": "2",
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "ts": 39.904,
+      "type": "tools_executed",
+      "payload": {
+        "calls": [
+          {
+            "name": "send_dtmf",
+            "call_id": "call_90L2LdAIQ5leNozO",
+            "arguments": "{\"digits\":\"2\"}",
+            "output": "Sent DTMF: 2",
+            "is_error": false
+          }
+        ]
+      }
+    },
+    {
+      "ts": 40.388,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 40.389,
+      "type": "agent_state",
+      "payload": {
+        "old": "thinking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 59.904,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 59.907,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 60.569,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "You've reached Prior Authorization Services. To check the status of an existing authorization, you may visit our provider portal at machhealth.com or use our automated status system by entering your reference number now. To speak with a representative about prior authorization, press 9.",
+        "language": null
+      }
+    },
+    {
+      "ts": 60.57,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "You've reached Prior Authorization Services. To check the status of an existing authorization, you may visit our provider portal at machhealth.com or use our automated status system by entering your reference number now. To speak with a representative about prior authorization, press 9."
+        ],
+        "text_content": "You've reached Prior Authorization Services. To check the status of an existing authorization, you may visit our provider portal at machhealth.com or use our automated status system by entering your reference number now. To speak with a representative about prior authorization, press 9.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 60.813,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "thinking"
+      }
+    },
+    {
+      "ts": 61.01,
+      "type": "dtmf_sent",
+      "payload": {
+        "digits": "9",
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "ts": 61.012,
+      "type": "tools_executed",
+      "payload": {
+        "calls": [
+          {
+            "name": "send_dtmf",
+            "call_id": "call_3GxfbXauQYMDbSJ1",
+            "arguments": "{\"digits\":\"9\"}",
+            "output": "Sent DTMF: 9",
+            "is_error": false
+          }
+        ]
+      }
+    },
+    {
+      "ts": 61.891,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 61.893,
+      "type": "agent_state",
+      "payload": {
+        "old": "thinking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 69.011,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 69.015,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 69.48,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Before we connect you with a representative, please enter your 10-digit National Provider Identifier followed by the pound sign.",
+        "language": null
+      }
+    },
+    {
+      "ts": 69.481,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Before we connect you with a representative, please enter your 10-digit National Provider Identifier followed by the pound sign."
+        ],
+        "text_content": "Before we connect you with a representative, please enter your 10-digit National Provider Identifier followed by the pound sign.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 69.953,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "thinking"
+      }
+    },
+    {
+      "ts": 72.168,
+      "type": "dtmf_sent",
+      "payload": {
+        "digits": "1234567890#",
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "ts": 72.169,
+      "type": "tools_executed",
+      "payload": {
+        "calls": [
+          {
+            "name": "send_dtmf",
+            "call_id": "call_WJTGxf9euMfxVyhB",
+            "arguments": "{\"digits\":\"1234567890#\"}",
+            "output": "Sent DTMF: 1234567890#",
+            "is_error": false
+          }
+        ]
+      }
+    },
+    {
+      "ts": 72.781,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 72.782,
+      "type": "agent_state",
+      "payload": {
+        "old": "thinking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 86.021,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 86.024,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 86.522,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you. Please hold while we connect you with the next available representative. Your estimated wait time is 47 minutes. Your call may be recorded for quality assurance. We are experiencing higher than normal call volumes.",
+        "language": null
+      }
+    },
+    {
+      "ts": 86.522,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you. Please hold while we connect you with the next available representative. Your estimated wait time is 47 minutes. Your call may be recorded for quality assurance. We are experiencing higher than normal call volumes."
+        ],
+        "text_content": "Thank you. Please hold while we connect you with the next available representative. Your estimated wait time is 47 minutes. Your call may be recorded for quality assurance. We are experiencing higher than normal call volumes.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 87.545,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 90.769,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 90.77,
+      "type": "agent_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 90.773,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "assistant",
+        "content": [
+          "Hi, this is Ruma Care on behalf of Dr. Smith about Jane"
+        ],
+        "text_content": "Hi, this is Ruma Care on behalf of Dr. Smith about Jane",
+        "interrupted": true
+      }
+    },
+    {
+      "ts": 95.796,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 95.798,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 96.187,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "cauh, raff number, and dob.",
+        "language": null
+      }
+    },
+    {
+      "ts": 96.187,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "cauh, raff number, and dob."
+        ],
+        "text_content": "cauh, raff number, and dob.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 97.268,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 102.781,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 102.782,
+      "type": "agent_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 102.785,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "assistant",
+        "content": [
+          "Date of birth is March fourteenth nineteen eighty five, and the auth reference is A"
+        ],
+        "text_content": "Date of birth is March fourteenth nineteen eighty five, and the auth reference is A",
+        "interrupted": true
+      }
+    },
+    {
+      "ts": 105.789,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 105.793,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 106.358,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Rough number? One sec.",
+        "language": null
+      }
+    },
+    {
+      "ts": 106.359,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Rough number? One sec."
+        ],
+        "text_content": "Rough number? One sec.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 107.039,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 108.585,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 108.586,
+      "type": "agent_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 108.587,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "assistant",
+        "content": [
+          "So AUTH-2026-0042 is"
+        ],
+        "text_content": "So AUTH-2026-0042 is",
+        "interrupted": true
+      }
+    },
+    {
+      "ts": 116.517,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 116.521,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 116.988,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 117.035,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Yeah, so off to 0260042 approved through July 31 via CPT 99213. Anything else?",
+        "language": null
+      }
+    },
+    {
+      "ts": 117.035,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Yeah, so off to 0260042 approved through July 31 via CPT 99213. Anything else?"
+        ],
+        "text_content": "Yeah, so off to 0260042 approved through July 31 via CPT 99213. Anything else?",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 118.4,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 118.403,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 118.623,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Yep, correct.",
+        "language": null
+      }
+    },
+    {
+      "ts": 118.623,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Yep, correct."
+        ],
+        "text_content": "Yep, correct.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 119.46,
+      "type": "tools_executed",
+      "payload": {
+        "calls": [
+          {
+            "name": "end_call",
+            "call_id": "call_yvRDBqmtjnQd5R0q",
+            "arguments": "{}",
+            "output": "say goodbye to the user",
+            "is_error": false
+          }
+        ]
+      }
+    },
+    {
+      "ts": 119.46,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "thinking"
+      }
+    },
+    {
+      "ts": 120.757,
+      "type": "agent_state",
+      "payload": {
+        "old": "thinking",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 123.508,
+      "type": "agent_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 123.509,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "assistant",
+        "content": [
+          "Thanks, that\u2019s all I needed. Goodbye."
+        ],
+        "text_content": "Thanks, that\u2019s all I needed. Goodbye.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 123.629,
+      "type": "session_closed",
+      "payload": {
+        "reason": "CloseReason.USER_INITIATED",
+        "error": null
+      }
+    }
+  ]
+}

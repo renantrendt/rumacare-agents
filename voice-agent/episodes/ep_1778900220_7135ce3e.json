@@ -1,0 +1,92 @@
+{
+  "episode_id": "ep_1778900220_7135ce3e",
+  "room": "manual-debug-1778900216",
+  "started_at": 1778900220.901559,
+  "ended_at": 1778900274.456388,
+  "params": {
+    "language_attempt": "english",
+    "invalid_npi_count": 0,
+    "hold_seconds": 2,
+    "rep_persona": "polite_sarah",
+    "inject_url_deflection": true,
+    "human_path": "press_9",
+    "auth_status": "approved",
+    "rep_voice_gender": "female",
+    "expected_npi": "1234567890",
+    "expected_dob_spoken": "March fourteenth nineteen eighty five",
+    "expected_dob_digits": "03141985",
+    "expected_auth_ref": "AUTH-2026-0042",
+    "expected_cpt": "99213"
+  },
+  "rep_persona": "Sarah",
+  "events": [
+    {
+      "ts": 0.9341230392456055,
+      "type": "existing_participant",
+      "payload": {
+        "identity": "agent-AJ_PXddHBkV4box",
+        "kind": "4"
+      }
+    },
+    {
+      "ts": 0.9364109039306641,
+      "type": "agent_audio_subscribed",
+      "payload": {
+        "participant": "agent-AJ_PXddHBkV4box"
+      }
+    },
+    {
+      "ts": 2.717221736907959,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Thank you for calling MockHealth provider services. Most prior authorization questions can be answered at our provider portal at MockHealth dot com slash providers. To continue with this call: for English, press 1, para Espa\u00f1ol, oprima 2."
+      }
+    },
+    {
+      "ts": 23.059452772140503,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "1",
+        "code": 1
+      }
+    },
+    {
+      "ts": 23.059480667114258,
+      "type": "level_1_chose",
+      "payload": {
+        "digit": "1",
+        "expected": "1"
+      }
+    },
+    {
+      "ts": 23.059507846832275,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Please listen to the following menu options carefully, as they have recently changed. For claims status, press 1. For prior authorization, press 2. For credentialing, press 3. For all other inquiries, press 0. To repeat this menu, press star."
+      }
+    },
+    {
+      "ts": 53.55451488494873,
+      "type": "dtmf_timeout",
+      "payload": {
+        "waited_s": 15.0
+      }
+    },
+    {
+      "ts": 53.554521799087524,
+      "type": "level_2_chose",
+      "payload": {
+        "digit": null,
+        "expected": "2"
+      }
+    },
+    {
+      "ts": 53.5545380115509,
+      "type": "episode_aborted",
+      "payload": {
+        "reason": "timeout",
+        "detail": "Agent picked None at L2 (expected 2 for prior authorization)"
+      }
+    }
+  ]
+}

@@ -22,7 +22,6 @@ The current implementation is a LiveKit Agents worker plus an adversarial mock I
 
 - Runs a LiveKit voice agent that can join mock or SIP-backed calls.
 - Uses GPT-Realtime-2 as the default speech-to-speech model path.
-- Keeps Grok Voice and a cascaded STT/LLM/TTS stack as opt-in comparison paths.
 - Provides an adversarial Python mock IVR with deflection menus, DTMF capture, hold behavior, and representative personas.
 - Records mock episodes as JSON traces and optional local stereo WAV files.
 - Scores episodes with deterministic checks and optional LLM-judged soft checks.
@@ -48,6 +47,10 @@ The current implementation is a LiveKit Agents worker plus an adversarial mock I
 │   ├── mission_brief.py      # Pydantic mission schema
 │   ├── requirements.txt
 │   ├── .env.example
+│   ├── dashboard.html        # committed demo dashboard
+│   ├── episodes/             # committed synthetic demo traces
+│   ├── recordings/           # committed synthetic demo audio
+│   ├── logs/                 # committed demo worker log
 │   └── test-fixtures/
 │       └── mock_ivr_menu.md
 
@@ -61,8 +64,6 @@ There is intentionally no `scripts/` directory in the public repo. Earlier inter
 |---|---|---|
 | Realtime media | LiveKit Cloud + LiveKit Agents | WebRTC rooms, agent workers, dispatch, SIP gateway |
 | Primary voice model | OpenAI GPT-Realtime-2 | Native speech-to-speech agent path |
-| Comparison voice model | xAI Grok Voice Think Fast | Optional S2S benchmark path |
-| Fallback stack | Deepgram STT + Groq Llama + Deepgram TTS | Cascaded fallback path |
 | Mock IVR speech | Deepgram Aura TTS + Deepgram streaming STT | Synthetic payer prompts and agent speech capture |
 | Telephony carrier | Twilio Elastic SIP Trunk | PSTN/SIP for real outbound calls through LiveKit |
 | Judge | Anthropic Claude or other configured provider | Optional LLM-judged soft checks |
@@ -76,10 +77,8 @@ Create `../.env.local` from `voice-agent/.env.example` or root `.env.example`. R
 |---|---|---|
 | LiveKit Cloud | `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, `SIP_OUTBOUND_TRUNK_ID` | Agent worker, rooms, dispatches, SIP calls |
 | OpenAI | `OPENAI_API_KEY` | Default `gpt-rt2` speech-to-speech agent |
-| Deepgram | `DEEPGRAM_API_KEY` | Mock IVR TTS/STT and cascaded fallback |
+| Deepgram | `DEEPGRAM_API_KEY` | Mock IVR TTS/STT |
 | Twilio | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_PHONE_NUMBER` | SIP carrier and outbound caller ID |
-| Groq | `GROQ_API_KEY` | Optional cascaded LLM fallback |
-| xAI | `XAI_API_KEY` | Optional `grok-voice` comparison path |
 | Anthropic | `ANTHROPIC_API_KEY`, `JUDGE_MODEL` | Optional Claude judge for soft checks |
 
 Mock-only local benchmarking still needs LiveKit, OpenAI, and Deepgram. Real PSTN calls also need Twilio SIP configured and connected to LiveKit.
@@ -124,15 +123,9 @@ Generate the dashboard:
 python dashboard.py --out dashboard.html --open
 ```
 
-## Model Paths
+## Model Path
 
-The mission metadata controls the backend:
-
-- `gpt-rt2`: OpenAI GPT-Realtime-2, the default path.
-- `grok-voice`: xAI Grok Voice Think Fast, available for comparison.
-- `cascaded`: Deepgram STT, Groq Llama, and Deepgram TTS fallback.
-
-`MissionBrief.model` defaults to `gpt-rt2`.
+The public harness is GPT-first: `MissionBrief.model` defaults to `gpt-rt2`, which uses OpenAI GPT-Realtime-2 for the speech-to-speech agent.
 
 ## Mock IVR Personas
 
@@ -172,6 +165,13 @@ When `--record-audio` is used, the mock harness writes a stereo WAV:
 - Right channel: agent audio received from LiveKit.
 
 `dashboard.py` adds an audio player for recorded episodes and keeps the text replay below it for debugging.
+
+The repo includes a committed synthetic demo run so visitors can inspect the dashboard, traces, recordings, and logs without running the harness first:
+
+- `voice-agent/dashboard.html`
+- `voice-agent/episodes/`
+- `voice-agent/recordings/`
+- `voice-agent/logs/`
 
 ## Safety Notes
 

@@ -1,0 +1,830 @@
+{
+  "job_id": "AJ_QVHiUxx8ZhDj",
+  "room": "bench-grok-voice-polite_sarah-r0-1778900380",
+  "agent_name": "rumacare",
+  "model": "grok-voice",
+  "started_at": 1778900383.453023,
+  "ended_at": 1778900466.0207171,
+  "events": [
+    {
+      "ts": 0.008,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "AgentHandoff"
+      }
+    },
+    {
+      "ts": 0.029,
+      "type": "agent_state",
+      "payload": {
+        "old": "initializing",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 6.161,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 6.838,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for",
+        "language": null
+      }
+    },
+    {
+      "ts": 6.838,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for"
+        ],
+        "text_content": "Thank you for",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 7.822,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health.",
+        "language": null
+      }
+    },
+    {
+      "ts": 7.822,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health."
+        ],
+        "text_content": "Thank you for calling Mock Health.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 8.774,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Moc Health Provider Services.",
+        "language": null
+      }
+    },
+    {
+      "ts": 8.775,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Moc Health Provider Services."
+        ],
+        "text_content": "Thank you for calling Moc Health Provider Services.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 9.758,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most",
+        "language": null
+      }
+    },
+    {
+      "ts": 9.758,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 10.78,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization",
+        "language": null
+      }
+    },
+    {
+      "ts": 10.78,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 11.779,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be",
+        "language": null
+      }
+    },
+    {
+      "ts": 11.779,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 12.824,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider",
+        "language": null
+      }
+    },
+    {
+      "ts": 12.824,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 13.824,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mock health",
+        "language": null
+      }
+    },
+    {
+      "ts": 13.824,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mock health"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mock health",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 14.785,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash",
+        "language": null
+      }
+    },
+    {
+      "ts": 14.785,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 15.766,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers.",
+        "language": null
+      }
+    },
+    {
+      "ts": 15.766,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers."
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 16.783,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with",
+        "language": null
+      }
+    },
+    {
+      "ts": 16.783,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 17.854,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call.",
+        "language": null
+      }
+    },
+    {
+      "ts": 17.855,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call."
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 18.825,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press",
+        "language": null
+      }
+    },
+    {
+      "ts": 18.825,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 19.824,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol,",
+        "language": null
+      }
+    },
+    {
+      "ts": 19.824,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol,"
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol,",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 20.816,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol, oprima two.",
+        "language": null
+      }
+    },
+    {
+      "ts": 20.816,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol, oprima two."
+        ],
+        "text_content": "Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol, oprima two.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 21.304,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 22.008,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": " Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol, oprima two.",
+        "language": null
+      }
+    },
+    {
+      "ts": 22.008,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          " Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol, oprima two."
+        ],
+        "text_content": " Thank you for calling Mock Health Provider Services. Most prior authorization questions can be answered at our provider portal at mockhealth dot com slash providers. To continue with this call, for English, press one. Para Espanol, oprima two.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 22.026,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 25.801,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 26.368,
+      "type": "dtmf_sent",
+      "payload": {
+        "digits": "1",
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "ts": 27.773,
+      "type": "agent_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 27.773,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "assistant",
+        "content": [
+          "Thank you, I'll stay on the line."
+        ],
+        "text_content": "Thank you, I'll stay on the line.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 27.773,
+      "type": "tools_executed",
+      "payload": {
+        "calls": [
+          {
+            "name": "send_dtmf",
+            "call_id": "call-918aa74b-c34d-466f-8fcc-14b4cb7975c0-0",
+            "arguments": "{\"digits\":\"1\"}",
+            "output": "Sent DTMF: 1",
+            "is_error": false
+          }
+        ]
+      }
+    },
+    {
+      "ts": 27.774,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "thinking"
+      }
+    },
+    {
+      "ts": 28.235,
+      "type": "user_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 28.235,
+      "type": "agent_state",
+      "payload": {
+        "old": "thinking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 28.903,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "Language menu",
+        "language": null
+      }
+    },
+    {
+      "ts": 28.904,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "Language menu"
+        ],
+        "text_content": "Language menu",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 29.922,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully.",
+        "language": null
+      }
+    },
+    {
+      "ts": 29.922,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully."
+        ],
+        "text_content": "... menu options carefully.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 30.97,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently",
+        "language": null
+      }
+    },
+    {
+      "ts": 30.971,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently"
+        ],
+        "text_content": "... menu options carefully as they have recently",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 31.974,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claims",
+        "language": null
+      }
+    },
+    {
+      "ts": 31.974,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claims"
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claims",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 32.97,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one.",
+        "language": null
+      }
+    },
+    {
+      "ts": 32.97,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one."
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 33.928,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For",
+        "language": null
+      }
+    },
+    {
+      "ts": 33.929,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For"
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 34.979,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press",
+        "language": null
+      }
+    },
+    {
+      "ts": 34.979,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press"
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 35.934,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two.",
+        "language": null
+      }
+    },
+    {
+      "ts": 35.934,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two."
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 36.98,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press",
+        "language": null
+      }
+    },
+    {
+      "ts": 36.98,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press"
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 37.922,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three.",
+        "language": null
+      }
+    },
+    {
+      "ts": 37.922,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three."
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 38.934,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other",
+        "language": null
+      }
+    },
+    {
+      "ts": 38.934,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other"
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 39.981,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero.",
+        "language": null
+      }
+    },
+    {
+      "ts": 39.981,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero."
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 40.94,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this",
+        "language": null
+      }
+    },
+    {
+      "ts": 40.94,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this"
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 41.87,
+      "type": "user_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 41.966,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this menu, press star.",
+        "language": null
+      }
+    },
+    {
+      "ts": 41.966,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this menu, press star."
+        ],
+        "text_content": "... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this menu, press star.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 42.123,
+      "type": "agent_heard",
+      "payload": {
+        "transcript": " ... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this menu, press star.",
+        "language": null
+      }
+    },
+    {
+      "ts": 42.124,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "user",
+        "content": [
+          " ... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this menu, press star."
+        ],
+        "text_content": " ... menu options carefully as they have recently changed. For claim status, press one. For prior authorization, press two. For credentialing, press three. For all other inquiries, press zero. To repeat this menu, press star.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 42.128,
+      "type": "agent_speech_created",
+      "payload": {
+        "source": "generate_reply",
+        "user_initiated": false
+      }
+    },
+    {
+      "ts": 43.882,
+      "type": "agent_state",
+      "payload": {
+        "old": "listening",
+        "new": "speaking"
+      }
+    },
+    {
+      "ts": 47.563,
+      "type": "agent_state",
+      "payload": {
+        "old": "speaking",
+        "new": "listening"
+      }
+    },
+    {
+      "ts": 47.563,
+      "type": "conversation_item",
+      "payload": {
+        "item_type": "ChatMessage",
+        "role": "assistant",
+        "content": [
+          "I'm calling about a prior authorization status. I'll press two."
+        ],
+        "text_content": "I'm calling about a prior authorization status. I'll press two.",
+        "interrupted": false
+      }
+    },
+    {
+      "ts": 56.409,
+      "type": "session_closed",
+      "payload": {
+        "reason": "CloseReason.PARTICIPANT_DISCONNECTED",
+        "error": null
+      }
+    }
+  ]
+}

@@ -21,14 +21,5 @@ __pycache__/
 .venv/
 voice-agent/.venv/
 
-# Voice-agent generated artifacts
-voice-agent/dashboard.html
-voice-agent/episodes/
-voice-agent/recordings/
-voice-agent/logs/
-
-# Logs
-*.log
-
 # Private/internal source material not needed for the public voice-agent repo
 private/

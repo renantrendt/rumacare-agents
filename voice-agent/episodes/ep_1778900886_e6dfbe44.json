@@ -1,0 +1,345 @@
+{
+  "episode_id": "ep_1778900886_e6dfbe44",
+  "room": "bench-gpt-rt2-confused_maria-r0-1778900880",
+  "started_at": 1778900886.953161,
+  "ended_at": 1778901026.158529,
+  "params": {
+    "language_attempt": "english",
+    "invalid_npi_count": 0,
+    "hold_seconds": 3,
+    "rep_persona": "confused_maria",
+    "inject_url_deflection": true,
+    "human_path": "press_9",
+    "auth_status": "approved",
+    "rep_voice_gender": "female",
+    "expected_npi": "1234567890",
+    "expected_dob_spoken": "March fourteenth nineteen eighty five",
+    "expected_dob_digits": "03141985",
+    "expected_auth_ref": "AUTH-2026-0042",
+    "expected_cpt": "99213"
+  },
+  "rep_persona": "Maria",
+  "events": [
+    {
+      "ts": 0.7129130363464355,
+      "type": "existing_participant",
+      "payload": {
+        "identity": "agent-AJ_HoCP4DYCt4mr",
+        "kind": "4"
+      }
+    },
+    {
+      "ts": 0.7145340442657471,
+      "type": "agent_audio_subscribed",
+      "payload": {
+        "participant": "agent-AJ_HoCP4DYCt4mr"
+      }
+    },
+    {
+      "ts": 2.5750539302825928,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Thank you for calling MockHealth provider services. Most prior authorization questions can be answered at our provider portal at MockHealth dot com slash providers. To continue with this call: for English, press 1, para Espa\u00f1ol, oprima 2."
+      }
+    },
+    {
+      "ts": 20.183708906173706,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "1",
+        "code": 1
+      }
+    },
+    {
+      "ts": 20.18385887145996,
+      "type": "level_1_chose",
+      "payload": {
+        "digit": "1",
+        "expected": "1"
+      }
+    },
+    {
+      "ts": 20.183910131454468,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Please listen to the following menu options carefully, as they have recently changed. For claims status, press 1. For prior authorization, press 2. For credentialing, press 3. For all other inquiries, press 0. To repeat this menu, press star."
+      }
+    },
+    {
+      "ts": 37.92632603645325,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "2",
+        "code": 2
+      }
+    },
+    {
+      "ts": 37.9263699054718,
+      "type": "level_2_chose",
+      "payload": {
+        "digit": "2",
+        "expected": "2"
+      }
+    },
+    {
+      "ts": 37.926414012908936,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "You've reached prior authorization services. To check the status of an existing authorization, you may visit our provider portal at MockHealth dot com, or use our automated status system by entering your reference number now. To speak with a representative about prior authorization, press 9."
+      }
+    },
+    {
+      "ts": 57.98539996147156,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "9",
+        "code": 9
+      }
+    },
+    {
+      "ts": 57.98547101020813,
+      "type": "level_3_chose",
+      "payload": {
+        "digit": "9",
+        "expected": "9"
+      }
+    },
+    {
+      "ts": 57.98550486564636,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Before we connect you with a representative, please enter your 10-digit National Provider Identifier, followed by the pound sign."
+      }
+    },
+    {
+      "ts": 67.21934700012207,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "1",
+        "code": 1
+      }
+    },
+    {
+      "ts": 67.41485786437988,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "2",
+        "code": 2
+      }
+    },
+    {
+      "ts": 67.61671590805054,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "3",
+        "code": 3
+      }
+    },
+    {
+      "ts": 67.8244788646698,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "4",
+        "code": 4
+      }
+    },
+    {
+      "ts": 68.02602791786194,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "5",
+        "code": 5
+      }
+    },
+    {
+      "ts": 68.2279748916626,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "6",
+        "code": 6
+      }
+    },
+    {
+      "ts": 68.42230010032654,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "7",
+        "code": 7
+      }
+    },
+    {
+      "ts": 68.62478303909302,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "8",
+        "code": 8
+      }
+    },
+    {
+      "ts": 68.83147597312927,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "9",
+        "code": 9
+      }
+    },
+    {
+      "ts": 69.02497720718384,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "0",
+        "code": 0
+      }
+    },
+    {
+      "ts": 69.23130798339844,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "#",
+        "code": 11
+      }
+    },
+    {
+      "ts": 69.23139095306396,
+      "type": "level_4_npi",
+      "payload": {
+        "received": "1234567890#",
+        "expected": "1234567890#"
+      }
+    },
+    {
+      "ts": 69.2314670085907,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Thank you. Please hold while we connect you with the next available representative. Your estimated wait time is 47 minutes. Your call may be recorded for quality assurance. We are experiencing higher than normal call volumes."
+      }
+    },
+    {
+      "ts": 85.41384387016296,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Provider services this is Maria, sorry, what was the patient's name?"
+      }
+    },
+    {
+      "ts": 96.46521997451782,
+      "type": "agent_said",
+      "payload": {
+        "text": "Hi. This is Roomacare on behalf of doctor Smith"
+      }
+    },
+    {
+      "ts": 96.46524310112,
+      "type": "level_7_agent_response",
+      "payload": {
+        "text": "Hi. This is Roomacare on behalf of doctor Smith",
+        "rep": "Maria"
+      }
+    },
+    {
+      "ts": 96.46535086631775,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "And the date of birth, sorry can you repeat that one more time?"
+      }
+    },
+    {
+      "ts": 100.9909679889679,
+      "type": "agent_said",
+      "payload": {
+        "text": "about Jane Doe. Date of birth March fourteenth"
+      }
+    },
+    {
+      "ts": 100.99103617668152,
+      "type": "level_7_dob_response",
+      "payload": {
+        "text": "about Jane Doe. Date of birth March fourteenth"
+      }
+    },
+    {
+      "ts": 100.99115490913391,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "The authorization number? Sorry, can you spell that?"
+      }
+    },
+    {
+      "ts": 110.33505988121033,
+      "type": "agent_said",
+      "payload": {
+        "text": "Sure. Let me see in that clearly for you."
+      }
+    },
+    {
+      "ts": 110.33507299423218,
+      "type": "level_8_ref_response",
+      "payload": {
+        "text": "Sure. Let me see in that clearly for you."
+      }
+    },
+    {
+      "ts": 110.33518576622009,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Okay let me look... hmm, I'm seeing a different Jane Doe, give me one more second..."
+      }
+    },
+    {
+      "ts": 117.87127804756165,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Okay I found it, the authorization AUTH-2026-0042 is approved, it's good through July 30th, 2026, for one visit, procedure 99213."
+      }
+    },
+    {
+      "ts": 135.40851712226868,
+      "type": "agent_said",
+      "payload": {
+        "text": "So a u t h"
+      }
+    },
+    {
+      "ts": 135.4085409641266,
+      "type": "level_9_agent_readback",
+      "payload": {
+        "text": "So a u t h"
+      }
+    },
+    {
+      "ts": 135.40872192382812,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Yes that's what I have here."
+      }
+    },
+    {
+      "ts": 138.021222114563,
+      "type": "agent_said",
+      "payload": {
+        "text": "two zero two six zero zero four two is approved."
+      }
+    },
+    {
+      "ts": 138.02123498916626,
+      "type": "level_9_agent_final",
+      "payload": {
+        "text": "two zero two six zero zero four two is approved."
+      }
+    },
+    {
+      "ts": 138.02131605148315,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Okay thanks, bye."
+      }
+    },
+    {
+      "ts": 139.20536708831787,
+      "type": "episode_complete",
+      "payload": {
+        "reason": "happy_path"
+      }
+    }
+  ]
+}

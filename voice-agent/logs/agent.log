@@ -1,0 +1,1044 @@
+2026-05-15 21:02:25,502 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:02:25,503 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:02:25,508 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:02:25,509 DEV livekit.agents: Watching /Users/renanserrano/rumacare-agents/voice-agent
+2026-05-15 21:02:26,395 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:02:26,396 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:02:26,396 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:02:26,402 INFO livekit.agents: starting worker
+2026-05-15 21:02:26,402 INFO livekit.agents: plugin registered
+2026-05-15 21:02:26,403 INFO livekit.agents: plugin registered
+2026-05-15 21:02:26,404 INFO livekit.agents: plugin registered
+2026-05-15 21:02:26,404 INFO livekit.agents: plugin registered
+2026-05-15 21:02:26,407 INFO livekit.agents: HTTP server listening on :58155
+2026-05-15 21:02:26,602 INFO livekit.agents: registered worker
+2026-05-15 21:02:33,607 INFO livekit.agents: received job request
+2026-05-15 21:02:33,650 DEBUG livekit.agents: received assignment
+2026-05-15 21:02:33,651 WARNING livekit.agents: no warmed process available for job, waiting for one to be created
+2026-05-15 21:02:33,657 INFO livekit.agents: initializing process
+2026-05-15 21:02:34,546 INFO livekit.agents: process initialized
+2026-05-15 21:02:34,546 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:02:34,546 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:02:34,555 INFO rumacare: Mock-IVR episode: will await Python mock for MockHealth about Jane Doe
+2026-05-15 21:02:34,555 INFO rumacare: Connecting to LiveKit room bench-gpt-rt2-polite_sarah-r0-1778904152
+2026-05-15 21:02:34,555 INFO rumacare: Mock-IVR episode: will await Python mock for MockHealth about Jane Doe
+2026-05-15 21:02:34,555 INFO rumacare: Connecting to LiveKit room bench-gpt-rt2-polite_sarah-r0-1778904152
+2026-05-15 21:02:35,273 INFO rumacare: Building AgentSession with model=gpt-rt2
+2026-05-15 21:02:35,275 DEBUG livekit.agents: configuring session recording
+2026-05-15 21:02:35,273 INFO rumacare: Building AgentSession with model=gpt-rt2
+2026-05-15 21:02:35,275 DEBUG livekit.agents: configuring session recording
+2026-05-15 21:02:35,281 DEBUG livekit.agents: input stream attached
+2026-05-15 21:02:35,282 DEBUG livekit.agents: input stream detached
+2026-05-15 21:02:35,282 DEBUG livekit.agents: input stream attached
+2026-05-15 21:02:35,281 DEBUG livekit.agents: input stream attached
+2026-05-15 21:02:35,282 DEBUG livekit.agents: input stream detached
+2026-05-15 21:02:35,282 DEBUG livekit.agents: input stream attached
+2026-05-15 21:02:35,301 DEBUG livekit.agents: http_session(): creating a new httpclient ctx
+2026-05-15 21:02:35,301 DEBUG livekit.agents: http_session(): creating a new httpclient ctx
+2026-05-15 21:02:35,302 DEBUG livekit.agents: using audio io: `RoomIO` -> `RecorderIO` -> `AgentSession` -> `RecorderIO` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 21:02:35,302 DEBUG livekit.agents: using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 21:02:35,303 INFO rumacare: Agent ready in room bench-gpt-rt2-polite_sarah-r0-1778904152; awaiting any participant
+2026-05-15 21:02:35,302 DEBUG livekit.agents: using audio io: `RoomIO` -> `RecorderIO` -> `AgentSession` -> `RecorderIO` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 21:02:35,302 DEBUG livekit.agents: using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 21:02:35,303 INFO rumacare: Agent ready in room bench-gpt-rt2-polite_sarah-r0-1778904152; awaiting any participant
+2026-05-15 21:02:38,992 DEBUG livekit.agents: start reading stream
+2026-05-15 21:02:38,992 DEBUG livekit.agents: start reading stream
+2026-05-15 21:02:57,759 DEBUG livekit.agents: executing tool
+2026-05-15 21:02:57,760 INFO rumacare: send_dtmf called: digits='1'
+2026-05-15 21:02:57,759 DEBUG livekit.agents: executing tool
+2026-05-15 21:02:57,760 INFO rumacare: send_dtmf called: digits='1'
+2026-05-15 21:02:57,962 INFO rumacare: send_dtmf complete: sent '1'
+2026-05-15 21:02:57,962 INFO rumacare: send_dtmf complete: sent '1'
+2026-05-15 21:02:57,962 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:02:57,962 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:02:58,699 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:02:58,699 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:03:14,556 DEBUG livekit.agents: executing tool
+2026-05-15 21:03:14,557 INFO rumacare: send_dtmf called: digits='2'
+2026-05-15 21:03:14,556 DEBUG livekit.agents: executing tool
+2026-05-15 21:03:14,557 INFO rumacare: send_dtmf called: digits='2'
+2026-05-15 21:03:14,761 INFO rumacare: send_dtmf complete: sent '2'
+2026-05-15 21:03:14,761 INFO rumacare: send_dtmf complete: sent '2'
+2026-05-15 21:03:14,762 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:03:14,762 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:03:15,379 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:03:15,379 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:03:35,000 DEBUG livekit.agents: executing tool
+2026-05-15 21:03:35,000 INFO rumacare: send_dtmf called: digits='9'
+2026-05-15 21:03:35,000 DEBUG livekit.agents: executing tool
+2026-05-15 21:03:35,000 INFO rumacare: send_dtmf called: digits='9'
+2026-05-15 21:03:35,202 INFO rumacare: send_dtmf complete: sent '9'
+2026-05-15 21:03:35,202 INFO rumacare: send_dtmf complete: sent '9'
+2026-05-15 21:03:35,202 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:03:35,202 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:03:35,773 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:03:35,773 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:03:44,246 DEBUG livekit.agents: executing tool
+2026-05-15 21:03:44,247 INFO rumacare: send_dtmf called: digits='1234567890#'
+2026-05-15 21:03:44,246 DEBUG livekit.agents: executing tool
+2026-05-15 21:03:44,247 INFO rumacare: send_dtmf called: digits='1234567890#'
+2026-05-15 21:03:46,467 INFO rumacare: send_dtmf complete: sent '1234567890#'
+2026-05-15 21:03:46,468 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:03:46,467 INFO rumacare: send_dtmf complete: sent '1234567890#'
+2026-05-15 21:03:46,468 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:03:47,076 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:03:47,076 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:04:01,599 DEBUG livekit.agents: aec warmup active, disabling interruptions for 3.00s
+2026-05-15 21:04:01,599 DEBUG livekit.agents: aec warmup active, disabling interruptions for 3.00s
+2026-05-15 21:04:01,900 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 21:04:01,900 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 21:04:04,600 DEBUG livekit.agents: aec warmup expired, re-enabling interruptions
+2026-05-15 21:04:04,600 DEBUG livekit.agents: aec warmup expired, re-enabling interruptions
+2026-05-15 21:04:20,793 WARNING livekit.agents: Input is shorter by 1736 samples; silence has been prepended to align the input channel. The resulting recording may not accurately reflect the original audio. This is expected if the input device or audio input is disabled. This warning will only be shown once.
+2026-05-15 21:04:20,793 WARNING livekit.agents: Input is shorter by 1736 samples; silence has been prepended to align the input channel. The resulting recording may not accurately reflect the original audio. This is expected if the input device or audio input is disabled. This warning will only be shown once.
+2026-05-15 21:04:20,803 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:04:20,803 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:04:24,624 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 21:04:24,624 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 21:04:39,496 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:04:39,496 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 21:04:42,496 DEBUG livekit.agents: executing tool
+2026-05-15 21:04:42,496 DEBUG livekit.agents: end_call tool called
+2026-05-15 21:04:42,496 DEBUG livekit.agents: executing tool
+2026-05-15 21:04:42,496 DEBUG livekit.agents: end_call tool called
+2026-05-15 21:04:42,499 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:04:42,499 DEBUG livekit.agents: tools execution completed
+2026-05-15 21:04:48,993 DEBUG livekit.agents: input stream detached
+2026-05-15 21:04:48,993 DEBUG livekit.agents: input stream detached
+2026-05-15 21:04:49,195 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_RGb5juv4N7xk.json (107 events)
+2026-05-15 21:04:49,195 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_RGb5juv4N7xk.json (107 events)
+2026-05-15 21:04:49,196 DEBUG livekit.agents: stream closed
+2026-05-15 21:04:49,196 DEBUG livekit.agents: session closed
+2026-05-15 21:04:49,196 DEBUG livekit.agents: stream closed
+2026-05-15 21:04:49,196 DEBUG livekit.agents: session closed
+2026-05-15 21:04:49,200 DEBUG livekit.agents: uploading session report to LiveKit Cloud
+2026-05-15 21:04:49,200 DEBUG livekit.agents: uploading session report to LiveKit Cloud
+2026-05-15 21:04:51,356 DEBUG livekit.agents: finished uploading
+2026-05-15 21:04:51,357 DEBUG livekit.agents: shutting down job task
+2026-05-15 21:04:51,356 DEBUG livekit.agents: finished uploading
+2026-05-15 21:04:51,357 DEBUG livekit.agents: shutting down job task
+2026-05-15 21:04:51,359 INFO livekit.agents: process exiting
+2026-05-15 21:04:51,397 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_RGb5juv4N7xk.json (107 events)
+2026-05-15 21:04:51,397 INFO livekit.agents: deleting the room because the user ended the call
+2026-05-15 21:04:51,397 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_RGb5juv4N7xk.json (107 events)
+2026-05-15 21:04:51,397 INFO livekit.agents: deleting the room because the user ended the call
+2026-05-15 21:04:52,337 DEBUG livekit.agents: http_session(): closing the httpclient ctx
+2026-05-15 21:04:52,337 DEBUG livekit.agents: http_session(): closing the httpclient ctx
+2026-05-15 21:38:29,685 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:29,689 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:29,693 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:29,765 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:31,219 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:31,220 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:31,220 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:31,220 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:31,220 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:31,227 INFO livekit.agents: starting worker
+2026-05-15 21:38:31,227 INFO livekit.agents: starting worker
+2026-05-15 21:38:31,227 INFO livekit.agents: starting worker
+2026-05-15 21:38:31,227 INFO livekit.agents: starting worker
+2026-05-15 21:38:31,227 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,227 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,227 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,227 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,228 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,229 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,229 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,229 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,229 INFO livekit.agents: plugin registered
+2026-05-15 21:38:31,232 INFO livekit.agents: HTTP server listening on :59269
+2026-05-15 21:38:31,232 INFO livekit.agents: HTTP server listening on :59270
+2026-05-15 21:38:31,232 INFO livekit.agents: HTTP server listening on :59274
+2026-05-15 21:38:31,232 INFO livekit.agents: HTTP server listening on :59271
+2026-05-15 21:38:31,458 INFO livekit.agents: registered worker
+2026-05-15 21:38:31,458 INFO livekit.agents: registered worker
+2026-05-15 21:38:31,458 INFO livekit.agents: registered worker
+2026-05-15 21:38:31,458 INFO livekit.agents: registered worker
+2026-05-15 21:38:47,076 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:47,165 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:47,165 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:47,179 INFO livekit.agents: shutting down worker
+2026-05-15 21:38:48,588 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:48,588 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:48,588 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:48,589 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:48,589 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:48,589 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:48,589 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:38:48,589 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:38:48,589 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:48,589 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:48,589 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:48,589 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:38:48,596 INFO livekit.agents: starting worker
+2026-05-15 21:38:48,596 INFO livekit.agents: starting worker
+2026-05-15 21:38:48,596 INFO livekit.agents: starting worker
+2026-05-15 21:38:48,596 INFO livekit.agents: starting worker
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,597 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,598 INFO livekit.agents: plugin registered
+2026-05-15 21:38:48,601 INFO livekit.agents: HTTP server listening on :59318
+2026-05-15 21:38:48,601 INFO livekit.agents: HTTP server listening on :59319
+2026-05-15 21:38:48,601 INFO livekit.agents: HTTP server listening on :59322
+2026-05-15 21:38:48,602 INFO livekit.agents: HTTP server listening on :59324
+2026-05-15 21:38:48,815 INFO livekit.agents: registered worker
+2026-05-15 21:38:48,831 INFO livekit.agents: registered worker
+2026-05-15 21:38:48,831 INFO livekit.agents: registered worker
+2026-05-15 21:38:48,831 INFO livekit.agents: registered worker
+2026-05-15 21:39:19,278 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:19,345 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:19,368 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:19,368 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:20,602 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:20,603 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:20,603 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:20,603 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:20,603 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:20,609 INFO livekit.agents: starting worker
+2026-05-15 21:39:20,609 INFO livekit.agents: starting worker
+2026-05-15 21:39:20,609 INFO livekit.agents: starting worker
+2026-05-15 21:39:20,609 INFO livekit.agents: starting worker
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,610 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,611 INFO livekit.agents: plugin registered
+2026-05-15 21:39:20,614 INFO livekit.agents: HTTP server listening on :59367
+2026-05-15 21:39:20,614 INFO livekit.agents: HTTP server listening on :59369
+2026-05-15 21:39:20,614 INFO livekit.agents: HTTP server listening on :59370
+2026-05-15 21:39:20,614 INFO livekit.agents: HTTP server listening on :59368
+2026-05-15 21:39:20,837 INFO livekit.agents: registered worker
+2026-05-15 21:39:20,847 INFO livekit.agents: registered worker
+2026-05-15 21:39:20,847 INFO livekit.agents: registered worker
+2026-05-15 21:39:20,865 INFO livekit.agents: registered worker
+2026-05-15 21:39:33,539 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:33,547 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:33,608 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:33,616 INFO livekit.agents: shutting down worker
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:34,840 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:39:34,841 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:34,841 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:34,841 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:34,841 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:39:34,847 INFO livekit.agents: starting worker
+2026-05-15 21:39:34,847 INFO livekit.agents: starting worker
+2026-05-15 21:39:34,847 INFO livekit.agents: starting worker
+2026-05-15 21:39:34,847 INFO livekit.agents: starting worker
+2026-05-15 21:39:34,848 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,848 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,848 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,848 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,849 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,850 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,850 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,850 INFO livekit.agents: plugin registered
+2026-05-15 21:39:34,852 INFO livekit.agents: HTTP server listening on :59396
+2026-05-15 21:39:34,852 INFO livekit.agents: HTTP server listening on :59395
+2026-05-15 21:39:34,852 INFO livekit.agents: HTTP server listening on :59398
+2026-05-15 21:39:34,852 INFO livekit.agents: HTTP server listening on :59397
+2026-05-15 21:39:35,105 INFO livekit.agents: registered worker
+2026-05-15 21:39:35,105 INFO livekit.agents: registered worker
+2026-05-15 21:39:35,105 INFO livekit.agents: registered worker
+2026-05-15 21:39:35,137 INFO livekit.agents: registered worker
+2026-05-15 21:40:46,061 INFO livekit.agents: shutting down worker
+2026-05-15 21:40:46,133 INFO livekit.agents: shutting down worker
+2026-05-15 21:40:46,155 INFO livekit.agents: shutting down worker
+2026-05-15 21:40:46,161 INFO livekit.agents: shutting down worker
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:40:47,247 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:40:47,248 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:40:47,248 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:40:47,248 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:40:47,248 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:40:47,254 INFO livekit.agents: starting worker
+2026-05-15 21:40:47,254 INFO livekit.agents: starting worker
+2026-05-15 21:40:47,254 INFO livekit.agents: starting worker
+2026-05-15 21:40:47,254 INFO livekit.agents: starting worker
+2026-05-15 21:40:47,255 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,255 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,255 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,255 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,256 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,257 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,257 INFO livekit.agents: plugin registered
+2026-05-15 21:40:47,259 INFO livekit.agents: HTTP server listening on :59463
+2026-05-15 21:40:47,259 INFO livekit.agents: HTTP server listening on :59464
+2026-05-15 21:40:47,259 INFO livekit.agents: HTTP server listening on :59462
+2026-05-15 21:40:47,259 INFO livekit.agents: HTTP server listening on :59465
+2026-05-15 21:40:47,501 INFO livekit.agents: registered worker
+2026-05-15 21:40:47,501 INFO livekit.agents: registered worker
+2026-05-15 21:40:47,501 INFO livekit.agents: registered worker
+2026-05-15 21:40:47,525 INFO livekit.agents: registered worker
+2026-05-15 21:49:12,341 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:12,347 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:12,349 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:12,422 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:13,729 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:13,730 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:13,730 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:13,730 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:13,730 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:13,737 INFO livekit.agents: starting worker
+2026-05-15 21:49:13,737 INFO livekit.agents: starting worker
+2026-05-15 21:49:13,737 INFO livekit.agents: starting worker
+2026-05-15 21:49:13,737 INFO livekit.agents: starting worker
+2026-05-15 21:49:13,737 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,737 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,737 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,737 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,738 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,739 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,739 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,739 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,739 INFO livekit.agents: plugin registered
+2026-05-15 21:49:13,742 INFO livekit.agents: HTTP server listening on :59830
+2026-05-15 21:49:13,742 INFO livekit.agents: HTTP server listening on :59832
+2026-05-15 21:49:13,742 INFO livekit.agents: HTTP server listening on :59834
+2026-05-15 21:49:13,742 INFO livekit.agents: HTTP server listening on :59836
+2026-05-15 21:49:13,967 INFO livekit.agents: registered worker
+2026-05-15 21:49:13,971 INFO livekit.agents: registered worker
+2026-05-15 21:49:13,978 INFO livekit.agents: registered worker
+2026-05-15 21:49:13,991 INFO livekit.agents: registered worker
+2026-05-15 21:49:28,021 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:28,029 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:28,113 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:28,122 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:29,062 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:29,062 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:29,062 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:29,068 INFO livekit.agents: starting worker
+2026-05-15 21:49:29,069 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,069 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,070 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,070 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:29,070 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:29,070 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,071 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:29,073 INFO livekit.agents: HTTP server listening on :59853
+2026-05-15 21:49:29,076 INFO livekit.agents: starting worker
+2026-05-15 21:49:29,076 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,077 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,077 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,078 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,081 INFO livekit.agents: HTTP server listening on :59855
+2026-05-15 21:49:29,142 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:29,142 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:29,142 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:29,142 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:29,142 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:29,142 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:29,147 INFO livekit.agents: starting worker
+2026-05-15 21:49:29,148 INFO livekit.agents: starting worker
+2026-05-15 21:49:29,148 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,149 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,149 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,149 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,149 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,149 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,150 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,150 INFO livekit.agents: plugin registered
+2026-05-15 21:49:29,153 INFO livekit.agents: HTTP server listening on :59860
+2026-05-15 21:49:29,153 INFO livekit.agents: HTTP server listening on :59859
+2026-05-15 21:49:29,271 INFO livekit.agents: registered worker
+2026-05-15 21:49:29,286 INFO livekit.agents: registered worker
+2026-05-15 21:49:29,345 INFO livekit.agents: registered worker
+2026-05-15 21:49:29,345 INFO livekit.agents: registered worker
+2026-05-15 21:49:44,826 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:44,883 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:44,908 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:44,915 INFO livekit.agents: shutting down worker
+2026-05-15 21:49:45,965 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:45,965 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:45,965 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:45,971 INFO livekit.agents: starting worker
+2026-05-15 21:49:45,972 INFO livekit.agents: plugin registered
+2026-05-15 21:49:45,972 INFO livekit.agents: plugin registered
+2026-05-15 21:49:45,973 INFO livekit.agents: plugin registered
+2026-05-15 21:49:45,973 INFO livekit.agents: plugin registered
+2026-05-15 21:49:45,977 INFO livekit.agents: HTTP server listening on :59885
+2026-05-15 21:49:46,040 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:46,040 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:46,041 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:46,047 INFO livekit.agents: starting worker
+2026-05-15 21:49:46,048 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,048 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,049 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,049 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,052 INFO livekit.agents: HTTP server listening on :59888
+2026-05-15 21:49:46,063 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:46,063 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 21:49:46,063 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:46,063 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 21:49:46,063 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:46,063 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 21:49:46,069 INFO livekit.agents: starting worker
+2026-05-15 21:49:46,069 INFO livekit.agents: starting worker
+2026-05-15 21:49:46,069 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,070 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,070 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,071 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,071 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,071 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,072 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,072 INFO livekit.agents: plugin registered
+2026-05-15 21:49:46,075 INFO livekit.agents: HTTP server listening on :59892
+2026-05-15 21:49:46,075 INFO livekit.agents: HTTP server listening on :59891
+2026-05-15 21:49:46,187 INFO livekit.agents: registered worker
+2026-05-15 21:49:46,245 INFO livekit.agents: registered worker
+2026-05-15 21:49:46,265 INFO livekit.agents: registered worker
+2026-05-15 21:49:46,278 INFO livekit.agents: registered worker
+2026-05-15 22:00:00,670 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:00,677 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:00,893 INFO livekit.agents: registered worker
+2026-05-15 22:00:01,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:01,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:01,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:01,675 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:01,675 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:01,675 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:01,859 INFO livekit.agents: registered worker
+2026-05-15 22:00:01,859 INFO livekit.agents: registered worker
+2026-05-15 22:00:01,878 INFO livekit.agents: registered worker
+2026-05-15 22:00:03,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:03,674 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:03,878 INFO livekit.agents: registered worker
+2026-05-15 22:00:05,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:05,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:05,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:05,668 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:05,674 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:05,674 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:05,674 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:05,674 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:05,860 INFO livekit.agents: registered worker
+2026-05-15 22:00:05,885 INFO livekit.agents: registered worker
+2026-05-15 22:00:05,885 INFO livekit.agents: registered worker
+2026-05-15 22:00:05,885 INFO livekit.agents: registered worker
+2026-05-15 22:00:07,666 WARNING livekit.agents: unexpected message type: 258
+2026-05-15 22:00:07,671 WARNING livekit.agents: failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1085, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1167, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/renanserrano/rumacare-agents/voice-agent/.venv/lib/python3.12/site-packages/livekit/agents/worker.py", line 1139, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+2026-05-15 22:00:07,865 INFO livekit.agents: registered worker
+2026-05-15 22:02:05,826 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:05,829 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:05,838 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:05,913 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:07,314 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:07,314 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:07,314 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:07,314 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:07,322 INFO livekit.agents: starting worker
+2026-05-15 22:02:07,322 INFO livekit.agents: starting worker
+2026-05-15 22:02:07,322 INFO livekit.agents: starting worker
+2026-05-15 22:02:07,322 INFO livekit.agents: starting worker
+2026-05-15 22:02:07,322 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,322 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,322 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,322 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,323 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,323 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,323 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,323 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,323 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,324 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,324 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,324 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,324 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,324 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,324 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,324 INFO livekit.agents: plugin registered
+2026-05-15 22:02:07,327 INFO livekit.agents: HTTP server listening on :60492
+2026-05-15 22:02:07,327 INFO livekit.agents: HTTP server listening on :60494
+2026-05-15 22:02:07,327 INFO livekit.agents: HTTP server listening on :60493
+2026-05-15 22:02:07,327 INFO livekit.agents: HTTP server listening on :60491
+2026-05-15 22:02:07,628 INFO livekit.agents: registered worker
+2026-05-15 22:02:07,628 INFO livekit.agents: registered worker
+2026-05-15 22:02:07,628 INFO livekit.agents: registered worker
+2026-05-15 22:02:07,628 INFO livekit.agents: registered worker
+2026-05-15 22:02:36,425 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:36,432 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:36,432 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:36,501 INFO livekit.agents: shutting down worker
+2026-05-15 22:02:37,508 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:37,508 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:37,508 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:37,508 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:37,508 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:37,508 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:37,509 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:37,509 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:37,509 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:37,514 INFO livekit.agents: starting worker
+2026-05-15 22:02:37,514 INFO livekit.agents: starting worker
+2026-05-15 22:02:37,514 INFO livekit.agents: starting worker
+2026-05-15 22:02:37,515 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,515 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,515 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,516 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,516 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,516 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,516 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,516 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,516 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,516 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,517 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,517 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,519 INFO livekit.agents: HTTP server listening on :60544
+2026-05-15 22:02:37,519 INFO livekit.agents: HTTP server listening on :60545
+2026-05-15 22:02:37,519 INFO livekit.agents: HTTP server listening on :60546
+2026-05-15 22:02:37,539 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:02:37,539 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:02:37,540 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:02:37,545 INFO livekit.agents: starting worker
+2026-05-15 22:02:37,546 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,546 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,547 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,547 INFO livekit.agents: plugin registered
+2026-05-15 22:02:37,550 INFO livekit.agents: HTTP server listening on :60550
+2026-05-15 22:02:37,750 INFO livekit.agents: registered worker
+2026-05-15 22:02:37,750 INFO livekit.agents: registered worker
+2026-05-15 22:02:37,750 INFO livekit.agents: registered worker
+2026-05-15 22:02:37,750 INFO livekit.agents: registered worker
+2026-05-15 22:08:15,671 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:15,746 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:15,746 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:15,763 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:17,030 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:17,031 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:17,031 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:17,031 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:17,031 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:17,038 INFO livekit.agents: starting worker
+2026-05-15 22:08:17,038 INFO livekit.agents: starting worker
+2026-05-15 22:08:17,038 INFO livekit.agents: starting worker
+2026-05-15 22:08:17,038 INFO livekit.agents: starting worker
+2026-05-15 22:08:17,038 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,038 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,038 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,038 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,040 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,040 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,040 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,040 INFO livekit.agents: plugin registered
+2026-05-15 22:08:17,042 INFO livekit.agents: HTTP server listening on :60815
+2026-05-15 22:08:17,042 INFO livekit.agents: HTTP server listening on :60817
+2026-05-15 22:08:17,042 INFO livekit.agents: HTTP server listening on :60818
+2026-05-15 22:08:17,042 INFO livekit.agents: HTTP server listening on :60819
+2026-05-15 22:08:17,266 INFO livekit.agents: registered worker
+2026-05-15 22:08:17,266 INFO livekit.agents: registered worker
+2026-05-15 22:08:17,285 INFO livekit.agents: registered worker
+2026-05-15 22:08:17,291 INFO livekit.agents: registered worker
+2026-05-15 22:08:32,809 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:32,878 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:32,898 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:32,906 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:33,995 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:33,995 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:33,995 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:34,001 INFO livekit.agents: starting worker
+2026-05-15 22:08:34,002 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,003 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,003 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,003 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,007 INFO livekit.agents: HTTP server listening on :60842
+2026-05-15 22:08:34,057 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:34,057 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:34,057 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:34,063 INFO livekit.agents: starting worker
+2026-05-15 22:08:34,064 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,064 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,065 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,065 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,068 INFO livekit.agents: HTTP server listening on :60845
+2026-05-15 22:08:34,089 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:34,090 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:34,090 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:34,092 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:34,092 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:34,093 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:34,095 INFO livekit.agents: starting worker
+2026-05-15 22:08:34,096 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,096 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,097 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,097 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,098 INFO livekit.agents: starting worker
+2026-05-15 22:08:34,098 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,099 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,099 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,100 INFO livekit.agents: plugin registered
+2026-05-15 22:08:34,100 INFO livekit.agents: HTTP server listening on :60848
+2026-05-15 22:08:34,102 INFO livekit.agents: HTTP server listening on :60850
+2026-05-15 22:08:34,234 INFO livekit.agents: registered worker
+2026-05-15 22:08:34,291 INFO livekit.agents: registered worker
+2026-05-15 22:08:34,291 INFO livekit.agents: registered worker
+2026-05-15 22:08:34,295 INFO livekit.agents: registered worker
+2026-05-15 22:08:39,108 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:39,109 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:39,177 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:39,196 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:40,196 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:40,196 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:40,197 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:40,202 INFO livekit.agents: starting worker
+2026-05-15 22:08:40,203 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,203 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,204 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,205 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,205 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:40,205 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:40,206 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:40,208 INFO livekit.agents: HTTP server listening on :60865
+2026-05-15 22:08:40,211 INFO livekit.agents: starting worker
+2026-05-15 22:08:40,212 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,212 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,213 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,213 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,216 INFO livekit.agents: HTTP server listening on :60868
+2026-05-15 22:08:40,253 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:40,253 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:40,253 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:40,259 INFO livekit.agents: starting worker
+2026-05-15 22:08:40,259 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,260 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,260 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,260 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,263 INFO livekit.agents: HTTP server listening on :60871
+2026-05-15 22:08:40,265 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:40,265 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:40,265 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:40,271 INFO livekit.agents: starting worker
+2026-05-15 22:08:40,272 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,273 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,273 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,273 INFO livekit.agents: plugin registered
+2026-05-15 22:08:40,276 INFO livekit.agents: HTTP server listening on :60874
+2026-05-15 22:08:40,402 INFO livekit.agents: registered worker
+2026-05-15 22:08:40,405 INFO livekit.agents: registered worker
+2026-05-15 22:08:40,463 INFO livekit.agents: registered worker
+2026-05-15 22:08:40,477 INFO livekit.agents: registered worker
+2026-05-15 22:08:41,858 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:41,934 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:41,936 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:41,955 INFO livekit.agents: shutting down worker
+2026-05-15 22:08:42,937 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:42,937 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:42,937 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:42,943 INFO livekit.agents: starting worker
+2026-05-15 22:08:42,943 INFO livekit.agents: plugin registered
+2026-05-15 22:08:42,944 INFO livekit.agents: plugin registered
+2026-05-15 22:08:42,944 INFO livekit.agents: plugin registered
+2026-05-15 22:08:42,945 INFO livekit.agents: plugin registered
+2026-05-15 22:08:42,949 INFO livekit.agents: HTTP server listening on :60886
+2026-05-15 22:08:43,024 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:43,024 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:43,024 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:43,024 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:43,025 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:43,025 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:43,030 INFO livekit.agents: starting worker
+2026-05-15 22:08:43,030 INFO livekit.agents: starting worker
+2026-05-15 22:08:43,030 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,030 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,030 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:08:43,030 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:08:43,031 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,031 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,031 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,031 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:08:43,031 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,032 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,032 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,035 INFO livekit.agents: HTTP server listening on :60889
+2026-05-15 22:08:43,035 INFO livekit.agents: HTTP server listening on :60891
+2026-05-15 22:08:43,036 INFO livekit.agents: starting worker
+2026-05-15 22:08:43,037 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,038 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,038 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,039 INFO livekit.agents: plugin registered
+2026-05-15 22:08:43,042 INFO livekit.agents: HTTP server listening on :60895
+2026-05-15 22:08:43,141 INFO livekit.agents: registered worker
+2026-05-15 22:08:43,236 INFO livekit.agents: registered worker
+2026-05-15 22:08:43,236 INFO livekit.agents: registered worker
+2026-05-15 22:08:43,240 INFO livekit.agents: registered worker
+2026-05-15 22:17:05,432 INFO livekit.agents: shutting down worker
+2026-05-15 22:17:05,432 WARNING watchfiles.main: received signal 15, raising KeyboardInterrupt
+2026-05-15 22:17:05,435 WARNING livekit.agents: exiting forcefully
+2026-05-15 22:22:17,348 INFO livekit.agents: shutting down worker
+2026-05-15 22:22:17,355 INFO livekit.agents: shutting down worker
+2026-05-15 22:22:17,428 INFO livekit.agents: shutting down worker
+2026-05-15 22:22:18,732 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:22:18,732 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:22:18,732 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:22:18,733 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:22:18,733 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:22:18,733 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:22:18,733 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:22:18,733 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:22:18,733 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:22:36,011 WARNING watchfiles.main: process already dead, exit code: 120
+2026-05-15 22:22:36,025 WARNING watchfiles.main: process already dead, exit code: 120
+2026-05-15 22:22:36,039 WARNING watchfiles.main: process already dead, exit code: 120
+2026-05-15 22:24:59,295 INFO livekit.agents: received job request
+2026-05-15 22:25:01,299 INFO livekit.agents: received job request
+2026-05-15 22:25:02,302 INFO livekit.agents: received job request
+2026-05-15 22:25:02,344 DEBUG livekit.agents: received assignment
+2026-05-15 22:26:47,927 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:26:47,935 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:26:47,937 DEV livekit.agents: Watching /Users/renanserrano/rumacare-agents/voice-agent
+2026-05-15 22:26:48,869 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:26:48,869 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:26:48,870 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:26:48,875 INFO livekit.agents: starting worker
+2026-05-15 22:26:48,876 INFO livekit.agents: plugin registered
+2026-05-15 22:26:48,877 INFO livekit.agents: plugin registered
+2026-05-15 22:26:48,877 INFO livekit.agents: plugin registered
+2026-05-15 22:26:48,878 INFO livekit.agents: plugin registered
+2026-05-15 22:26:48,881 INFO livekit.agents: HTTP server listening on :61732
+2026-05-15 22:26:49,101 INFO livekit.agents: registered worker
+2026-05-15 22:27:06,898 INFO livekit.agents: received job request
+2026-05-15 22:27:08,942 INFO livekit.agents: received job request
+2026-05-15 22:27:09,946 INFO livekit.agents: received job request
+2026-05-15 22:27:10,943 INFO livekit.agents: received job request
+2026-05-15 22:27:10,985 DEBUG livekit.agents: received assignment
+2026-05-15 22:27:10,986 WARNING livekit.agents: no warmed process available for job, waiting for one to be created
+2026-05-15 22:27:10,994 INFO livekit.agents: initializing process
+2026-05-15 22:27:12,058 INFO livekit.agents: process initialized
+2026-05-15 22:27:12,058 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:27:12,058 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:27:12,069 INFO rumacare: Mock-IVR episode: will await Python mock for MockHealth about Jane Doe
+2026-05-15 22:27:12,069 INFO rumacare: Connecting to LiveKit room bench-gpt-rt2-polite_sarah-r0-1778909225
+2026-05-15 22:27:12,069 INFO rumacare: Mock-IVR episode: will await Python mock for MockHealth about Jane Doe
+2026-05-15 22:27:12,069 INFO rumacare: Connecting to LiveKit room bench-gpt-rt2-polite_sarah-r0-1778909225
+2026-05-15 22:27:12,828 INFO rumacare: Building AgentSession with model=gpt-rt2
+2026-05-15 22:27:12,829 DEBUG livekit.agents: configuring session recording
+2026-05-15 22:27:12,828 INFO rumacare: Building AgentSession with model=gpt-rt2
+2026-05-15 22:27:12,829 DEBUG livekit.agents: configuring session recording
+2026-05-15 22:27:12,831 DEBUG livekit.agents: input stream attached
+2026-05-15 22:27:12,832 DEBUG livekit.agents: input stream detached
+2026-05-15 22:27:12,831 DEBUG livekit.agents: input stream attached
+2026-05-15 22:27:12,832 DEBUG livekit.agents: input stream attached
+2026-05-15 22:27:12,832 DEBUG livekit.agents: input stream detached
+2026-05-15 22:27:12,832 DEBUG livekit.agents: input stream attached
+2026-05-15 22:27:12,834 DEBUG livekit.agents: start reading stream
+2026-05-15 22:27:12,834 DEBUG livekit.agents: start reading stream
+2026-05-15 22:27:12,845 DEBUG livekit.agents: http_session(): creating a new httpclient ctx
+2026-05-15 22:27:12,845 DEBUG livekit.agents: http_session(): creating a new httpclient ctx
+2026-05-15 22:27:12,846 DEBUG livekit.agents: using audio io: `RoomIO` -> `RecorderIO` -> `AgentSession` -> `RecorderIO` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 22:27:12,846 DEBUG livekit.agents: using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 22:27:12,846 DEBUG livekit.agents: using audio io: `RoomIO` -> `RecorderIO` -> `AgentSession` -> `RecorderIO` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 22:27:12,847 INFO rumacare: Agent ready in room bench-gpt-rt2-polite_sarah-r0-1778909225; awaiting any participant
+2026-05-15 22:27:12,846 DEBUG livekit.agents: using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-05-15 22:27:12,847 INFO rumacare: Agent ready in room bench-gpt-rt2-polite_sarah-r0-1778909225; awaiting any participant
+2026-05-15 22:27:30,740 DEBUG livekit.agents: executing tool
+2026-05-15 22:27:30,740 DEBUG livekit.agents: executing tool
+2026-05-15 22:27:30,744 INFO rumacare: send_dtmf called: digits='1'
+2026-05-15 22:27:30,744 INFO rumacare: send_dtmf called: digits='1'
+2026-05-15 22:27:30,945 INFO rumacare: send_dtmf complete: sent '1'
+2026-05-15 22:27:30,945 INFO rumacare: send_dtmf complete: sent '1'
+2026-05-15 22:27:30,945 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:27:30,945 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:27:31,762 DEBUG livekit.agents: aec warmup active, disabling interruptions for 3.00s
+2026-05-15 22:27:31,762 DEBUG livekit.agents: aec warmup active, disabling interruptions for 3.00s
+2026-05-15 22:27:32,463 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 22:27:32,463 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 22:27:34,763 DEBUG livekit.agents: aec warmup expired, re-enabling interruptions
+2026-05-15 22:27:34,763 DEBUG livekit.agents: aec warmup expired, re-enabling interruptions
+2026-05-15 22:27:47,823 DEBUG livekit.agents: executing tool
+2026-05-15 22:27:47,824 INFO rumacare: send_dtmf called: digits='2'
+2026-05-15 22:27:47,823 DEBUG livekit.agents: executing tool
+2026-05-15 22:27:47,824 INFO rumacare: send_dtmf called: digits='2'
+2026-05-15 22:27:48,025 INFO rumacare: send_dtmf complete: sent '2'
+2026-05-15 22:27:48,025 INFO rumacare: send_dtmf complete: sent '2'
+2026-05-15 22:27:48,026 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:27:48,026 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:27:49,017 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 22:27:49,017 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 22:28:09,223 DEBUG livekit.agents: executing tool
+2026-05-15 22:28:09,224 INFO rumacare: send_dtmf called: digits='9'
+2026-05-15 22:28:09,223 DEBUG livekit.agents: executing tool
+2026-05-15 22:28:09,224 INFO rumacare: send_dtmf called: digits='9'
+2026-05-15 22:28:09,426 INFO rumacare: send_dtmf complete: sent '9'
+2026-05-15 22:28:09,426 INFO rumacare: send_dtmf complete: sent '9'
+2026-05-15 22:28:09,427 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:28:09,427 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:28:10,021 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:28:10,021 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:28:18,046 DEBUG livekit.agents: executing tool
+2026-05-15 22:28:18,046 INFO rumacare: send_dtmf called: digits='1234567890#'
+2026-05-15 22:28:18,046 DEBUG livekit.agents: executing tool
+2026-05-15 22:28:18,046 INFO rumacare: send_dtmf called: digits='1234567890#'
+2026-05-15 22:28:20,263 INFO rumacare: send_dtmf complete: sent '1234567890#'
+2026-05-15 22:28:20,263 INFO rumacare: send_dtmf complete: sent '1234567890#'
+2026-05-15 22:28:20,263 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:28:20,263 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:28:20,815 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:28:20,815 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:28:36,838 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:28:36,838 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:28:54,838 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:28:54,838 DEBUG livekit.plugins.openai: OpenAI Realtime API response done but not complete with status: cancelled
+2026-05-15 22:29:00,126 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 22:29:00,126 WARNING livekit.agents: _SegmentSynchronizerImpl.playback_finished called before text/audio input is done
+2026-05-15 22:29:22,058 DEBUG livekit.agents: executing tool
+2026-05-15 22:29:22,058 DEBUG livekit.agents: executing tool
+2026-05-15 22:29:22,059 DEBUG livekit.agents: end_call tool called
+2026-05-15 22:29:22,059 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:29:22,059 DEBUG livekit.agents: end_call tool called
+2026-05-15 22:29:22,059 DEBUG livekit.agents: tools execution completed
+2026-05-15 22:29:23,607 INFO livekit.agents: closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-05-15 22:29:23,608 DEBUG livekit.agents: stream closed
+2026-05-15 22:29:23,607 INFO livekit.agents: closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-05-15 22:29:23,608 DEBUG livekit.agents: stream closed
+2026-05-15 22:29:23,614 DEBUG livekit.agents: input stream detached
+2026-05-15 22:29:23,614 DEBUG livekit.agents: input stream detached
+2026-05-15 22:29:23,656 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_XDmPt8oJrHGQ.json (90 events)
+2026-05-15 22:29:23,656 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_XDmPt8oJrHGQ.json (90 events)
+2026-05-15 22:29:23,657 DEBUG livekit.agents: session closed
+2026-05-15 22:29:23,657 DEBUG livekit.agents: session closed
+2026-05-15 22:29:23,661 DEBUG livekit.agents: uploading session report to LiveKit Cloud
+2026-05-15 22:29:23,661 DEBUG livekit.agents: uploading session report to LiveKit Cloud
+2026-05-15 22:29:25,923 DEBUG livekit.agents: finished uploading
+2026-05-15 22:29:25,924 DEBUG livekit.agents: shutting down job task
+2026-05-15 22:29:25,923 DEBUG livekit.agents: finished uploading
+2026-05-15 22:29:25,926 INFO livekit.agents: process exiting
+2026-05-15 22:29:25,924 DEBUG livekit.agents: shutting down job task
+2026-05-15 22:29:25,974 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_XDmPt8oJrHGQ.json (90 events)
+2026-05-15 22:29:25,975 INFO livekit.agents: deleting the room because the user ended the call
+2026-05-15 22:29:25,974 INFO rumacare.trace: Agent episode trace written to /Users/renanserrano/rumacare-agents/voice-agent/episodes/agent_AJ_XDmPt8oJrHGQ.json (90 events)
+2026-05-15 22:29:25,975 INFO livekit.agents: deleting the room because the user ended the call
+2026-05-15 22:29:27,379 DEBUG livekit.agents: http_session(): closing the httpclient ctx
+2026-05-15 22:29:27,379 DEBUG livekit.agents: http_session(): closing the httpclient ctx
+2026-05-15 22:41:43,927 INFO livekit.agents: shutting down worker
+2026-05-15 22:41:45,199 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 22:41:45,200 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 22:41:45,200 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 22:41:45,206 INFO livekit.agents: starting worker
+2026-05-15 22:41:45,207 INFO livekit.agents: plugin registered
+2026-05-15 22:41:45,207 INFO livekit.agents: plugin registered
+2026-05-15 22:41:45,208 INFO livekit.agents: plugin registered
+2026-05-15 22:41:45,208 INFO livekit.agents: plugin registered
+2026-05-15 22:41:45,211 INFO livekit.agents: HTTP server listening on :62627
+2026-05-15 22:41:45,424 INFO livekit.agents: registered worker
+2026-05-15 23:27:57,538 INFO livekit.agents: shutting down worker
+2026-05-15 23:27:58,778 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 23:27:58,778 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 23:27:58,779 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 23:27:58,785 INFO livekit.agents: starting worker
+2026-05-15 23:27:58,785 INFO livekit.agents: plugin registered
+2026-05-15 23:27:58,786 INFO livekit.agents: plugin registered
+2026-05-15 23:27:58,787 INFO livekit.agents: plugin registered
+2026-05-15 23:27:58,787 INFO livekit.agents: plugin registered
+2026-05-15 23:27:58,790 INFO livekit.agents: HTTP server listening on :64402
+2026-05-15 23:27:59,236 INFO livekit.agents: registered worker
+2026-05-15 23:29:29,040 INFO livekit.agents: shutting down worker
+2026-05-15 23:29:30,287 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 23:29:30,287 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 23:29:30,288 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 23:29:30,294 INFO livekit.agents: starting worker
+2026-05-15 23:29:30,295 INFO livekit.agents: plugin registered
+2026-05-15 23:29:30,296 INFO livekit.agents: plugin registered
+2026-05-15 23:29:30,296 INFO livekit.agents: plugin registered
+2026-05-15 23:29:30,297 INFO livekit.agents: plugin registered
+2026-05-15 23:29:30,299 INFO livekit.agents: HTTP server listening on :64594
+2026-05-15 23:29:30,526 INFO livekit.agents: registered worker
+2026-05-15 23:29:47,285 INFO livekit.agents: shutting down worker
+2026-05-15 23:29:49,856 INFO livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-15 23:29:49,856 INFO livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-15 23:29:49,856 DEBUG asyncio: Using selector: KqueueSelector
+2026-05-15 23:29:49,863 INFO livekit.agents: starting worker
+2026-05-15 23:29:49,863 INFO livekit.agents: plugin registered
+2026-05-15 23:29:49,864 INFO livekit.agents: plugin registered
+2026-05-15 23:29:49,864 INFO livekit.agents: plugin registered
+2026-05-15 23:29:49,865 INFO livekit.agents: plugin registered
+2026-05-15 23:29:49,868 INFO livekit.agents: HTTP server listening on :64687
+2026-05-15 23:29:50,106 INFO livekit.agents: registered worker

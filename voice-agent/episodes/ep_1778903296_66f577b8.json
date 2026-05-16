@@ -1,0 +1,332 @@
+{
+  "episode_id": "ep_1778903296_66f577b8",
+  "room": "bench-gpt-rt2-polite_sarah-r0-1778903291",
+  "started_at": 1778903296.88923,
+  "ended_at": 1778903422.081714,
+  "params": {
+    "language_attempt": "english",
+    "invalid_npi_count": 0,
+    "hold_seconds": 3,
+    "rep_persona": "polite_sarah",
+    "inject_url_deflection": true,
+    "human_path": "press_9",
+    "auth_status": "approved",
+    "rep_voice_gender": "female",
+    "expected_npi": "1234567890",
+    "expected_dob_spoken": "March fourteenth nineteen eighty five",
+    "expected_dob_digits": "03141985",
+    "expected_auth_ref": "AUTH-2026-0042",
+    "expected_cpt": "99213"
+  },
+  "rep_persona": "Sarah",
+  "events": [
+    {
+      "ts": 0.6732699871063232,
+      "type": "existing_participant",
+      "payload": {
+        "identity": "agent-AJ_p5zEiras5UoU",
+        "kind": "4"
+      }
+    },
+    {
+      "ts": 0.674246072769165,
+      "type": "agent_audio_subscribed",
+      "payload": {
+        "participant": "agent-AJ_p5zEiras5UoU"
+      }
+    },
+    {
+      "ts": 2.4798190593719482,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Thank you for calling MockHealth provider services. Most prior authorization questions can be answered at our provider portal at MockHealth dot com slash providers. To continue with this call: for English, press 1, para Espa\u00f1ol, oprima 2."
+      }
+    },
+    {
+      "ts": 19.223654985427856,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "1",
+        "code": 1
+      }
+    },
+    {
+      "ts": 19.223701000213623,
+      "type": "level_1_chose",
+      "payload": {
+        "digit": "1",
+        "expected": "1"
+      }
+    },
+    {
+      "ts": 19.223751068115234,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Please listen to the following menu options carefully, as they have recently changed. For claims status, press 1. For prior authorization, press 2. For credentialing, press 3. For all other inquiries, press 0. To repeat this menu, press star."
+      }
+    },
+    {
+      "ts": 35.64747095108032,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "2",
+        "code": 2
+      }
+    },
+    {
+      "ts": 35.647603034973145,
+      "type": "level_2_chose",
+      "payload": {
+        "digit": "2",
+        "expected": "2"
+      }
+    },
+    {
+      "ts": 35.647671937942505,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "You've reached prior authorization services. To check the status of an existing authorization, you may visit our provider portal at MockHealth dot com, or use our automated status system by entering your reference number now. To speak with a representative about prior authorization, press 9."
+      }
+    },
+    {
+      "ts": 55.141188859939575,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "9",
+        "code": 9
+      }
+    },
+    {
+      "ts": 55.14172387123108,
+      "type": "level_3_chose",
+      "payload": {
+        "digit": "9",
+        "expected": "9"
+      }
+    },
+    {
+      "ts": 55.141791105270386,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Before we connect you with a representative, please enter your 10-digit National Provider Identifier, followed by the pound sign."
+      }
+    },
+    {
+      "ts": 64.09478306770325,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "1",
+        "code": 1
+      }
+    },
+    {
+      "ts": 64.29859209060669,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "2",
+        "code": 2
+      }
+    },
+    {
+      "ts": 64.49484491348267,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "3",
+        "code": 3
+      }
+    },
+    {
+      "ts": 64.70224285125732,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "4",
+        "code": 4
+      }
+    },
+    {
+      "ts": 64.90071415901184,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "5",
+        "code": 5
+      }
+    },
+    {
+      "ts": 65.11214184761047,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "6",
+        "code": 6
+      }
+    },
+    {
+      "ts": 65.30578684806824,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "7",
+        "code": 7
+      }
+    },
+    {
+      "ts": 65.50626802444458,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "8",
+        "code": 8
+      }
+    },
+    {
+      "ts": 65.71609497070312,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "9",
+        "code": 9
+      }
+    },
+    {
+      "ts": 65.90458798408508,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "0",
+        "code": 0
+      }
+    },
+    {
+      "ts": 66.11145305633545,
+      "type": "dtmf_received",
+      "payload": {
+        "digit": "#",
+        "code": 11
+      }
+    },
+    {
+      "ts": 66.11151599884033,
+      "type": "level_4_npi",
+      "payload": {
+        "received": "1234567890#",
+        "expected": "1234567890#"
+      }
+    },
+    {
+      "ts": 66.111576795578,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Thank you. Please hold while we connect you with the next available representative. Your estimated wait time is 47 minutes. Your call may be recorded for quality assurance. We are experiencing higher than normal call volumes."
+      }
+    },
+    {
+      "ts": 82.32446503639221,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Provider services, this is Sarah, can I have the patient's date of birth please?"
+      }
+    },
+    {
+      "ts": 88.69882988929749,
+      "type": "agent_said",
+      "payload": {
+        "text": "Okay. This might take a bit.",
+        "chunks": 2,
+        "drain_s": 0.0
+      }
+    },
+    {
+      "ts": 88.69883298873901,
+      "type": "level_7_agent_response",
+      "payload": {
+        "text": "Okay. This might take a bit.",
+        "rep": "Sarah"
+      }
+    },
+    {
+      "ts": 88.69893097877502,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "And the authorization reference number?"
+      }
+    },
+    {
+      "ts": 92.67465496063232,
+      "type": "agent_said",
+      "payload": {
+        "text": "March fourteenth",
+        "chunks": 1,
+        "drain_s": 0.0
+      }
+    },
+    {
+      "ts": 92.67465806007385,
+      "type": "level_8_ref_response",
+      "payload": {
+        "text": "March fourteenth"
+      }
+    },
+    {
+      "ts": 92.67475008964539,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Okay, let me pull that up... one moment."
+      }
+    },
+    {
+      "ts": 98.43200707435608,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Yes I see that authorization. It was approved on April 30th 2026, effective through July 30th 2026, for procedure code 99213, one visit. Anything else?"
+      }
+    },
+    {
+      "ts": 111.27427196502686,
+      "type": "agent_said",
+      "payload": {
+        "text": "eight a u t h dash two",
+        "chunks": 2,
+        "drain_s": 0.0
+      }
+    },
+    {
+      "ts": 111.27427697181702,
+      "type": "level_9_agent_readback",
+      "payload": {
+        "text": "eight a u t h dash two"
+      }
+    },
+    {
+      "ts": 111.27441501617432,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Yes, that's correct."
+      }
+    },
+    {
+      "ts": 123.06059503555298,
+      "type": "agent_said",
+      "payload": {
+        "text": "So a u t h two zero two six zero zero four two is approved. Is that correct?",
+        "chunks": 2,
+        "drain_s": 1.38
+      }
+    },
+    {
+      "ts": 123.06059908866882,
+      "type": "level_9_agent_final",
+      "payload": {
+        "text": "So a u t h two zero two six zero zero four two is approved. Is that correct?"
+      }
+    },
+    {
+      "ts": 123.06072878837585,
+      "type": "ivr_spoke",
+      "payload": {
+        "text": "Thank you, have a good day."
+      }
+    },
+    {
+      "ts": 125.19248294830322,
+      "type": "episode_complete",
+      "payload": {
+        "reason": "happy_path"
+      }
+    }
+  ]
+}
