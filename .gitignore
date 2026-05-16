@@ -1,0 +1,45 @@
+# Local secrets — only .env.example is committed
+.env
+.env.local
+.env.*.local
+
+# Whisper.cpp model files (auto-downloaded by scripts/transcribe.sh)
+models/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+voice-agent/.venv/
+voice-agent/recordings/
+voice-agent/episodes/
+voice-agent/logs/
+voice-agent/dashboard.html
+voice-agent-legacy/
+
+# Logs
+*.log
+
+# Private/internal source material not needed for the public voice-agent repo
+*.mp4
+transcripts/
+screenshots/
+notes/
+agent-resources.md
+KNOWLEDGE.md
+onboarding-pa-status-checks.md
+AGENTS.md
+index.md
+pipeline.md
+voice-agent.md
+voice-agent-stress-test-*.md
+private/

@@ -1,0 +1,29 @@
+# Ruma Care voice agent — LiveKit edition
+#
+# Versions verified against PyPI 2026-05-15. The livekit-* family ships in
+# lock-step at 1.5.9 (current); noise-cancellation has its own cadence at 0.2.x.
+
+# Core LiveKit Agents framework + CLI
+livekit-agents>=1.5.9,<2.0
+livekit-api>=1.1.0,<2.0
+
+# Telephony / SIP support — no extra package needed; SIP is in livekit-api.
+# VAD + Krisp noise cancellation
+livekit-plugins-silero>=1.5.9
+livekit-plugins-noise-cancellation>=0.2.5
+
+# STT / LLM / TTS providers
+livekit-plugins-deepgram>=1.5.9        # Deepgram Nova streaming ASR
+livekit-plugins-openai>=1.5.9          # GPT-4o LLM + Realtime fallback
+livekit-plugins-xai>=1.5.9             # optional Grok Voice comparison path
+livekit-plugins-perplexity>=1.5.9      # Perplexity Sonar (current LLM choice)
+livekit-plugins-elevenlabs>=1.5.9      # ElevenLabs TTS
+
+# Turn detection (English-tuned context-aware model)
+livekit-plugins-turn-detector>=1.5.9
+
+# Local dev
+python-dotenv>=1.0.1
+httpx>=0.28.0                            # direct Anthropic Messages API calls for Claude judge
+numpy>=2.0.0                             # local mock IVR audio buffers/recording
+rich>=13.9.4                           # pretty CLI output for the supervisor view
