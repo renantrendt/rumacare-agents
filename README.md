@@ -4,6 +4,8 @@ Voice-agent experiments for automating prior authorization status-check calls.
 
 The current implementation is a LiveKit Agents worker plus an adversarial mock IVR harness. It is designed for fast prompt-engineering and model evaluation before piloting against real payer phone trees.
 
+[**View the live benchmark dashboard**](https://renantrendt.github.io/rumacare-agents/voice-agent/dashboard.html)
+
 ## Screenshots
 
 ### Leaderboard
