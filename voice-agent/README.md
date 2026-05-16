@@ -152,6 +152,6 @@ The dashboard includes:
 - Per-episode trace replay.
 - Audio player for episodes recorded with `--record-audio`.
 
-## Public Data Policy
+## Data Notes
 
-Use only synthetic patients, provider identifiers, phone numbers, traces, and recordings in public examples. Do not commit `.env.local`, real call recordings, logs, or payer/patient data.
+The committed demo artifacts use synthetic mock-IVR data. Real payer pilots and operational data stay outside the public demo.

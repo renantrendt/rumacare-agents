@@ -98,7 +98,7 @@ Create a local env file from the template:
 cp .env.example ../.env.local
 ```
 
-Fill in the real provider keys in `../.env.local`. Never commit that file.
+Fill in the provider values in `../.env.local`.
 
 Start the LiveKit worker:
 
@@ -166,6 +166,8 @@ When `--record-audio` is used, the mock harness writes a stereo WAV:
 
 `dashboard.py` adds an audio player for recorded episodes and keeps the text replay below it for debugging.
 
+Listen to the most recent demo recording: [`voice-agent/recordings/ep_1778909231_91011429.wav`](https://github.com/renantrendt/rumacare-agents/raw/main/voice-agent/recordings/ep_1778909231_91011429.wav).
+
 The repo includes a committed synthetic demo run so visitors can inspect the dashboard, traces, recordings, and logs without running the harness first:
 
 - `voice-agent/dashboard.html`
@@ -173,11 +175,25 @@ The repo includes a committed synthetic demo run so visitors can inspect the das
 - `voice-agent/recordings/`
 - `voice-agent/logs/`
 
-## Safety Notes
+## Data Notes
 
-- Do not commit `.env.local`, API keys, real phone numbers, production call recordings, or payer/patient data.
-- Use synthetic mission briefs and mock IVR traces for public examples.
-- Treat real payer pilots as private operational data.
+- The committed dashboard artifacts use synthetic mock-IVR data.
+- Real payer pilots and operational data stay outside the public demo.
+
+## Roadmap
+
+### Phase 1 — IVR navigation only
+
+1. Navigate more real payer IVRs to expand surface area beyond the current mock tree.
+2. Generate synthetic IVR variations (menu wording, deflection traps, timing) from the captured shapes.
+3. Improve the harness with the new IVR coverage: more deterministic checks, richer trace replay, and per-payer pass rates.
+
+### Phase 2 — Talking with representatives
+
+1. Record multi-rep conversations across payers and personas.
+2. Curate those calls into a labeled dataset for the human-phase checks (introduction, DOB delivery, reference number, status readback, confirmation).
+3. Run the dataset against the benchmark, iterate on prompts and tools, then re-enable the human-phase scoring.
+4. Promote the harness to a live agent path once human-phase pass rates clear the bar.
 
 ## License
 
