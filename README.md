@@ -31,6 +31,51 @@ Listen to the most recent demo recording: [play in browser (GitHub Pages)](https
 - Scores episodes with deterministic checks and optional LLM-judged soft checks.
 - Generates a local HTML dashboard with leaderboard, replay timeline, and audio playback.
 
+## Mock IVR Personas
+
+The mock IVR rotates representative behavior to avoid overfitting to one easy script:
+
+| Persona | CLI value | What it tests |
+|---|---|---|
+| Polite Sarah | `polite_sarah` | Baseline: clear, normal pace, asks DOB then reference number |
+| Rushed John | `rushed_john` | Turn-taking stress: fast, terse, asks for the reference first |
+| Confused Maria | `confused_maria` | Recovery stress: asks for repeats and can appear to mix up patient context |
+
+Run all personas with:
+
+```bash
+python bench.py --models gpt-rt2 --personas all --runs 1 --record-audio
+```
+
+## Scoring
+
+The active benchmark focuses on IVR navigation only. Human-representative checks are implemented but temporarily disabled until the human-in-the-loop process is defined.
+
+Current hard checks include:
+
+- Agent connected to the mock IVR.
+- Chose English.
+- Chose prior authorization.
+- Refused the self-service trap and selected the representative path.
+- Sent the expected NPI followed by `#`.
+- Retried calmly after a false NPI rejection.
+- Finished under five minutes.
+
+## Roadmap
+
+### Phase 1 — IVR navigation only
+
+1. Navigate more real payer IVRs to expand surface area beyond the current mock tree.
+2. Generate synthetic IVR variations (menu wording, deflection traps, timing) from the captured shapes.
+3. Improve the harness with the new IVR coverage: more deterministic checks, richer trace replay, and per-payer pass rates.
+
+### Phase 2 — Talking with representatives
+
+1. Record multi-rep conversations across payers and personas.
+2. Curate those calls into a labeled dataset for the human-phase checks (introduction, DOB delivery, reference number, status readback, confirmation).
+3. Run the dataset against the benchmark, iterate on prompts and tools, then re-enable the human-phase scoring.
+4. Promote the harness to a live agent path once human-phase pass rates clear the bar.
+
 ## Repository Layout
 
 ```text
@@ -131,36 +176,6 @@ python dashboard.py --out dashboard.html --open
 
 The public harness is GPT-first: `MissionBrief.model` defaults to `gpt-rt2`, which uses OpenAI GPT-Realtime-2 for the speech-to-speech agent.
 
-## Mock IVR Personas
-
-The mock IVR rotates representative behavior to avoid overfitting to one easy script:
-
-| Persona | CLI value | What it tests |
-|---|---|---|
-| Polite Sarah | `polite_sarah` | Baseline: clear, normal pace, asks DOB then reference number |
-| Rushed John | `rushed_john` | Turn-taking stress: fast, terse, asks for the reference first |
-| Confused Maria | `confused_maria` | Recovery stress: asks for repeats and can appear to mix up patient context |
-
-Run all personas with:
-
-```bash
-python bench.py --models gpt-rt2 --personas all --runs 1 --record-audio
-```
-
-## Scoring
-
-The active benchmark focuses on IVR navigation only. Human-representative checks are implemented but temporarily disabled until the human-in-the-loop process is defined.
-
-Current hard checks include:
-
-- Agent connected to the mock IVR.
-- Chose English.
-- Chose prior authorization.
-- Refused the self-service trap and selected the representative path.
-- Sent the expected NPI followed by `#`.
-- Retried calmly after a false NPI rejection.
-- Finished under five minutes.
-
 ## Audio Replay
 
 When `--record-audio` is used, the mock harness writes a stereo WAV:
@@ -185,21 +200,6 @@ The repo includes a committed synthetic demo run so visitors can inspect the das
 
 - The committed dashboard artifacts use synthetic mock-IVR data.
 - Real payer pilots and operational data stay outside the public demo.
-
-## Roadmap
-
-### Phase 1 — IVR navigation only
-
-1. Navigate more real payer IVRs to expand surface area beyond the current mock tree.
-2. Generate synthetic IVR variations (menu wording, deflection traps, timing) from the captured shapes.
-3. Improve the harness with the new IVR coverage: more deterministic checks, richer trace replay, and per-payer pass rates.
-
-### Phase 2 — Talking with representatives
-
-1. Record multi-rep conversations across payers and personas.
-2. Curate those calls into a labeled dataset for the human-phase checks (introduction, DOB delivery, reference number, status readback, confirmation).
-3. Run the dataset against the benchmark, iterate on prompts and tools, then re-enable the human-phase scoring.
-4. Promote the harness to a live agent path once human-phase pass rates clear the bar.
 
 ## License
 
