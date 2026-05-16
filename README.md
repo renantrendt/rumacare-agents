@@ -18,7 +18,7 @@ The current implementation is a LiveKit Agents worker plus an adversarial mock I
 
 ![Episode traces](traces.png)
 
-Listen to the most recent demo recording: [play in browser via dashboard](https://htmlpreview.github.io/?https://github.com/renantrendt/rumacare-agents/blob/main/voice-agent/dashboard.html) · [download WAV](https://github.com/renantrendt/rumacare-agents/raw/main/voice-agent/recordings/ep_1778909231_91011429.wav).
+Listen to the most recent demo recording: [play in browser (GitHub Pages)](https://renantrendt.github.io/rumacare-agents/voice-agent/dashboard.html) · [mirror via githack](https://raw.githack.com/renantrendt/rumacare-agents/main/voice-agent/dashboard.html) · [download WAV](https://github.com/renantrendt/rumacare-agents/raw/main/voice-agent/recordings/ep_1778909231_91011429.wav).
 
 ## What This Does
 
@@ -168,9 +168,9 @@ When `--record-audio` is used, the mock harness writes a stereo WAV:
 
 `dashboard.py` adds an audio player for recorded episodes and keeps the text replay below it for debugging.
 
-Listen to the most recent demo recording: [play in browser via dashboard](https://htmlpreview.github.io/?https://github.com/renantrendt/rumacare-agents/blob/main/voice-agent/dashboard.html) · [download WAV](https://github.com/renantrendt/rumacare-agents/raw/main/voice-agent/recordings/ep_1778909231_91011429.wav).
+Listen to the most recent demo recording: [play in browser (GitHub Pages)](https://renantrendt.github.io/rumacare-agents/voice-agent/dashboard.html) · [mirror via githack](https://raw.githack.com/renantrendt/rumacare-agents/main/voice-agent/dashboard.html) · [download WAV](https://github.com/renantrendt/rumacare-agents/raw/main/voice-agent/recordings/ep_1778909231_91011429.wav).
 
-GitHub's README sanitizer strips `<audio>` tags and serves raw WAVs as downloads, so true autoplay inside the README itself is not possible. The dashboard link above opens the committed `dashboard.html` through htmlpreview and plays the audio inline in the browser.
+GitHub's README sanitizer strips `<audio>` tags and serves raw WAVs as downloads, so true autoplay inside the README itself is not possible. The GitHub Pages link opens the committed `dashboard.html` and plays the audio inline.
 
 The repo includes a committed synthetic demo run so visitors can inspect the dashboard, traces, recordings, and logs without running the harness first:
 
