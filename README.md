@@ -41,22 +41,22 @@ Listen to the most recent demo recording: [play in browser (GitHub Pages)](https
 ├── bench-steps.png
 ├── traces.png
 ├── private/                  # local-only internal material, gitignored
-├── voice-agent/
-│   ├── agent.py              # LiveKit worker and mission agent
-│   ├── mock_ivr.py           # adversarial mock IVR participant
-│   ├── bench.py              # benchmark runner
-│   ├── score_episodes.py     # scoring harness
-│   ├── dashboard.py          # local HTML report generator
-│   ├── episode_trace.py      # agent-side trace recorder
-│   ├── mission_brief.py      # Pydantic mission schema
-│   ├── requirements.txt
-│   ├── .env.example
-│   ├── dashboard.html        # committed demo dashboard
-│   ├── episodes/             # committed synthetic demo traces
-│   ├── recordings/           # committed synthetic demo audio
-│   ├── logs/                 # committed demo worker log
-│   └── test-fixtures/
-│       └── mock_ivr_menu.md
+└── voice-agent/
+    ├── agent.py              # LiveKit worker and mission agent
+    ├── mock_ivr.py           # adversarial mock IVR participant
+    ├── bench.py              # benchmark runner
+    ├── score_episodes.py     # scoring harness
+    ├── dashboard.py          # local HTML report generator
+    ├── episode_trace.py      # agent-side trace recorder
+    ├── mission_brief.py      # Pydantic mission schema
+    ├── requirements.txt
+    ├── .env.example
+    ├── dashboard.html        # committed demo dashboard
+    ├── episodes/             # committed synthetic demo traces
+    ├── recordings/           # committed synthetic demo audio
+    ├── logs/                 # committed demo worker log
+    └── test-fixtures/
+        └── mock_ivr_menu.md
 
 ```
 
